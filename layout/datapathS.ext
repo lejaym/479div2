@@ -1,0 +1,70 @@
+timestamp 1428358217
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use mux mux_0 1 0 20 0 1 -15
+use shifter shifter_0 1 0 35 0 1 -106
+use rego rego_0 1 0 0 0 1 -382
+node "m2_21_n110#" 0 2052 21 -110 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108 54 0 0
+node "m2_27_n45#" 0 11856 27 -45 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 624 216 0 0
+node "m2_4_n534#" 3 70889 4 -534 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3731 1242 0 0
+node "m2_57_42#" 1 34808 57 42 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1832 474 0 0
+cap "rego_0/REGOUT" "rego_0/a_85_n38#" 1575
+cap "rego_0/w_0_n160#" "rego_0/REGOUT" 18723
+cap "rego_0/w_0_n106#" "rego_0/REGOUT" 7075
+cap "rego_0/a_85_n38#" "m2_4_n534#" 2835
+cap "rego_0/w_0_n106#" "m2_4_n534#" 2907
+cap "rego_0/w_0_n18#" "m2_4_n534#" 6612
+cap "rego_0/w_0_95#" "m2_4_n534#" 3078
+cap "rego_0/w_0_n18#" "m2_4_n534#" 4320
+cap "rego_0/w_0_95#" "m2_4_n534#" 4320
+cap "rego_0/INCLK" "m2_4_n534#" 2700
+cap "rego_0/w_0_n18#" "m2_4_n534#" 3534
+cap "rego_0/w_0_157#" "m2_4_n534#" 4320
+cap "rego_0/w_0_157#" "m2_4_n534#" 6954
+cap "m2_4_n534#" "rego_0/w_0_95#" 1254
+cap "shifter_0/In" "shifter_0/w_n35_30#" 540
+cap "shifter_0/w_n35_30#" "shifter_0/m2_n35_39#" 4968
+cap "shifter_0/ShiftOut" "shifter_0/m2_n35_39#" 1080
+cap "shifter_0/w_n35_3#" "shifter_0/m2_n35_39#" 9108
+cap "shifter_0/Out" "shifter_0/w_n35_3#" 4860
+cap "shifter_0/w_n35_30#" "mux_0/REGIN" 1080
+cap "shifter_0/w_n35_30#" "mux_0/MUXOUT" 720
+cap "mux_0/REGIN" "mux_0/a_8_76#" 720
+cap "mux_0/REGIN" "mux_0/a_42_22#" 171
+cap "mux_0/REGIN" "mux_0/Vdd" 1349
+cap "m2_57_42#" "mux_0/MUXOUT" 404
+cap "mux_0/a_8_76#" "m2_57_42#" 630
+cap "mux_0/a_19_125#" "m2_57_42#" 855
+cap "m2_57_42#" "mux_0/Vdd" 4921
+cap "mux_0/a_8_76#" "m2_57_42#" 513
+cap "mux_0/a_42_22#" "m2_57_42#" 404
+cap "m2_57_42#" "mux_0/a_n20_198#" 7200
+cap "m2_57_42#" "mux_0/REGIN" 44
+cap "mux_0/a_19_125#" "m2_57_42#" 5355
+cap "mux_0/Vdd" "m2_57_42#" 6884
+cap "mux_0/a_28_261#" "m2_57_42#" 88
+cap "m2_57_42#" "mux_0/a_n10_398#" 76
+cap "mux_0/a_19_306#" "m2_57_42#" 247
+cap "mux_0/a_n20_198#" "m2_57_42#" 3600
+cap "mux_0/a_19_125#" "m2_57_42#" 7650
+cap "m2_57_42#" "mux_0/a_19_306#" 988
+cap "m2_57_42#" "mux_0/w_n20_187#" 5168
+cap "mux_0/Vdd" "m2_57_42#" 171
+cap "mux_0/a_n2_260#" "m2_57_42#" 76
+cap "m2_57_42#" "mux_0/w_n20_187#" 6682
+cap "mux_0/w_n20_187#" "m2_57_42#" 665
+cap "mux_0/a_19_306#" "m2_57_42#" 1633
+merge "mux_0/MUXOUT" "shifter_0/In" -627 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -38 0 0
+merge "shifter_0/In" "m2_27_n45#"
+merge "rego_0/a_24_218#" "shifter_0/Out" -2052 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 0 0
+merge "shifter_0/Out" "m2_21_n110#"
+merge "rego_0/w_0_240#" "shifter_0/w_n35_3#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "shifter_0/w_n35_3#" "shifter_0/a_28_13#"
+merge "mux_0/ADDSUB" "mux_0/REGIN" -95665 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3513 -1108 0 0
+merge "mux_0/REGIN" "m2_57_42#"
+merge "m2_57_42#" "shifter_0/m2_n35_39#"
+merge "shifter_0/m2_n35_39#" "rego_0/REGOUT"
+merge "rego_0/REGOUT" "m2_4_n534#"

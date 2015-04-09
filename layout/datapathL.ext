@@ -1,0 +1,84 @@
+timestamp 1428437267
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use reg reg_0 1 0 18 0 1 982
+use adder adder_0 1 0 0 0 1 432
+use mux mux_0 1 0 20 0 1 -15
+use shifter shifter_0 1 0 35 0 1 -106
+use rego rego_0 1 0 0 0 1 -382
+node "m2_21_n110#" 0 2052 21 -110 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108 54 0 0
+node "m2_27_n45#" 0 11856 27 -45 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 624 216 0 0
+node "m2_16_427#" 0 4655 16 427 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 245 108 0 0
+node "m2_0_n21#" 6 151639 0 -21 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8029 2678 0 0
+node "m2_23_781#" 0 4123 23 781 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 217 76 0 0
+node "m1_95_426#" 0 1692 95 426 v 0 0 0 0 0 0 0 0 0 0 0 0 36 24 36 24 0 0
+node "w_0_686#" 0 0 0 686 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_0_n21#" "w_0_686#" 912
+cap "rego_0/REGOUT" "rego_0/a_85_n38#" 1575
+cap "rego_0/w_0_n106#" "rego_0/REGOUT" 7075
+cap "rego_0/w_0_n160#" "rego_0/REGOUT" 18723
+cap "rego_0/w_0_n106#" "m2_0_n21#" 2907
+cap "rego_0/a_85_n38#" "m2_0_n21#" 2835
+cap "rego_0/w_0_n18#" "m2_0_n21#" 6612
+cap "rego_0/w_0_95#" "m2_0_n21#" 3078
+cap "m2_0_n21#" "rego_0/w_0_n18#" 3534
+cap "m2_0_n21#" "rego_0/w_0_n18#" 4320
+cap "rego_0/w_0_95#" "m2_0_n21#" 4320
+cap "m2_0_n21#" "rego_0/INCLK" 2700
+cap "rego_0/w_0_157#" "m2_0_n21#" 6954
+cap "m2_0_n21#" "rego_0/w_0_157#" 4320
+cap "rego_0/w_0_95#" "m2_0_n21#" 1254
+cap "shifter_0/In" "shifter_0/w_n35_30#" 540
+cap "shifter_0/Out" "shifter_0/w_n35_3#" 4860
+cap "shifter_0/w_n35_30#" "shifter_0/m2_n35_39#" 4968
+cap "shifter_0/w_n35_3#" "shifter_0/m2_n35_39#" 9108
+cap "shifter_0/ShiftOut" "shifter_0/m2_n35_39#" 1080
+cap "mux_0/REGIN" "shifter_0/w_n35_30#" 1080
+cap "mux_0/REGIN" "mux_0/GND" 6720
+cap "mux_0/REGIN" "mux_0/Vdd" 1938
+cap "shifter_0/w_n35_30#" "mux_0/MUXOUT" 720
+cap "m2_0_n21#" "mux_0/Vdd" 4320
+cap "m2_0_n21#" "mux_0/Vdd" 9576
+cap "mux_0/w_n20_187#" "m2_0_n21#" 7068
+cap "mux_0/a_n10_273#" "m2_0_n21#" 1620
+cap "mux_0/w_n20_187#" "m2_0_n21#" 4320
+cap "m2_0_n21#" "mux_0/Vdd" 684
+cap "m2_0_n21#" "mux_0/a_n20_198#" 912
+cap "mux_0/w_n20_187#" "m2_0_n21#" 798
+cap "mux_0/w_n20_288#" "m2_0_n21#" 7980
+cap "mux_0/w_n20_288#" "m2_0_n21#" 4050
+cap "m2_0_n21#" "adder_0/w_0_0#" 10308
+cap "adder_0/sum" "adder_0/w_0_0#" 11025
+cap "m2_0_n21#" "mux_0/w_n20_288#" 2052
+cap "adder_0/w_0_0#" "m2_0_n21#" 2166
+cap "adder_0/w_0_49#" "m2_0_n21#" 8322
+cap "adder_0/w_0_49#" "m2_0_n21#" 1080
+cap "adder_0/w_0_49#" "m2_0_n21#" 1080
+cap "m2_0_n21#" "adder_0/w_0_191#" 3990
+cap "m2_0_n21#" "adder_0/Cout" 1080
+cap "m2_0_n21#" "adder_0/w_0_49#" 6498
+cap "adder_0/B" "adder_0/w_0_191#" 2584
+cap "adder_0/B" "adder_0/w_0_191#" 2160
+cap "reg_0/REGOUT" "reg_0/w_n18_n201#" 8820
+merge "adder_0/A" "reg_0/REGOUT" -4123 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21 -28 0 0
+merge "reg_0/REGOUT" "m2_23_781#"
+merge "mux_0/MUXOUT" "shifter_0/In" -627 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 -38 0 0
+merge "shifter_0/In" "m2_27_n45#"
+merge "mux_0/ADDSUB" "adder_0/sum" -4655 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 0 0
+merge "adder_0/sum" "m2_16_427#"
+merge "adder_0/w_0_282#" "reg_0/w_n18_n201#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -220 0 0 0 -220
+merge "rego_0/a_24_218#" "shifter_0/Out" -2052 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 0 0
+merge "shifter_0/Out" "m2_21_n110#"
+merge "adder_0/w_0_191#" "w_0_686#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "mux_0/DIVIN" "mux_0/w_n20_399#" -1692 0 0 0 0 0 0 0 0 0 0 0 0 -36 -244 -36 -24 0 0
+merge "mux_0/w_n20_399#" "adder_0/w_0_0#"
+merge "adder_0/w_0_0#" "m1_95_426#"
+merge "rego_0/w_0_240#" "shifter_0/w_n35_3#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "shifter_0/w_n35_3#" "shifter_0/a_28_13#"
+merge "adder_0/B" "mux_0/REGIN" -140239 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5404 -1848 0 0
+merge "mux_0/REGIN" "shifter_0/m2_n35_39#"
+merge "shifter_0/m2_n35_39#" "rego_0/REGOUT"
+merge "rego_0/REGOUT" "m2_0_n21#"

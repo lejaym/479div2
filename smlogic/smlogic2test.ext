@@ -1,0 +1,209 @@
+timestamp 1428611785
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use rego rego_0 1 0 133 0 1 82
+use rego rego_1 1 0 243 0 1 82
+node "m1_129_25#" 0 0 129 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 40 26 0 0 0 0
+node "reset" 3 173368 348 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 3320 862 1876 504 0 0
+node "clk" 3 177190 347 169 m1 0 0 0 0 0 0 0 0 0 0 0 0 3770 958 0 0 0 0
+node "m1_104_123#" 1 101625 104 123 m1 0 0 0 0 0 0 0 0 0 0 0 0 1503 292 4034 754 0 0
+node "m1_84_n5#" 2 297322 84 -5 m1 0 0 0 0 0 0 0 0 0 0 0 0 6835 1012 0 0 0 0
+node "nextSB1" 993 48852 418 -69 pdiff 540 216 252 100 0 0 0 0 0 0 0 0 1205 508 2638 1400 0 0
+equiv "nextSB1" "nextSB1"
+node "a_428_n41#" 33 0 428 -41 ndiff 80 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_418_n41#" 33 0 418 -41 ndiff 80 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "add" 233 2824 438 -17 ndiff 80 36 120 52 0 0 0 0 0 0 0 0 228 130 128 72 0 0
+node "a_438_3#" 149 0 438 3 pdiff 0 0 160 56 0 0 0 0 0 0 0 0 80 48 0 0 0 0
+node "a_418_3#" 149 0 418 3 pdiff 0 0 160 56 0 0 0 0 0 0 0 0 80 48 0 0 0 0
+node "inbit" 233 1356 410 3 pdc 80 36 120 52 0 0 0 0 0 0 0 0 200 108 376 196 0 0
+node "a_446_n19#" 788 2980 446 -19 p 60 32 120 52 140 118 0 0 0 0 0 0 190 92 0 0 0 0
+node "a_400_n17#" 788 2980 400 -17 ndiff 60 32 120 52 140 118 0 0 0 0 0 0 190 92 0 0 0 0
+node "a_428_44#" 149 0 428 44 pdiff 0 0 160 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sel1" 243 1316 466 44 pdiff 60 32 120 52 0 0 0 0 0 0 0 0 172 94 0 0 0 0
+node "sel0" 244 752 448 44 pdc 60 32 120 52 0 0 0 0 0 0 0 0 160 88 124 70 0 0
+node "a_408_74#" 33 0 408 74 ndiff 80 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "shift" 195 2256 400 74 ndc 60 32 160 56 0 0 0 0 0 0 0 0 200 108 536 276 0 0
+node "load" 1116 4296 428 74 ndiff 80 36 120 52 164 160 0 0 0 0 0 0 204 110 368 192 0 0
+node "a_428_98#" 67 0 428 98 ndiff 160 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_418_98#" 67 0 418 98 ndiff 160 56 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "nextSB0" 1033 46682 418 128 pdiff 600 236 252 100 0 0 0 0 0 0 0 0 1302 508 1626 688 0 0
+equiv "nextSB0" "nextSB0"
+node "SB1" 4319 59941 398 -19 p 0 0 0 0 765 748 0 0 0 0 0 0 1100 574 316 156 0 0
+node "SB0" 4703 35777 416 42 p 0 0 0 0 812 804 0 0 0 0 0 0 612 330 349 168 0 0
+node "a_400_98#" 888 2360 400 98 ndc 120 52 108 48 116 114 0 0 0 0 0 0 244 130 0 0 0 0
+node "sign" 1224 8928 393 121 pc 0 0 0 0 275 242 0 0 0 0 0 0 132 82 672 344 0 0
+node "start" 3009 11559 447 -71 pc 0 0 0 0 512 512 0 0 0 0 0 0 72 52 1332 674 0 0
+node "w_123_n78#" 7517 0 123 -78 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 768 128
+node "w_123_n24#" 0 0 123 -24 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Gnd" 2282 46456 385 -44 pw 1400 548 372 160 0 0 0 0 0 0 0 0 3104 1010 984 262 0 0
+node "Vdd" 28131 70274 385 -78 nw 293 136 1380 528 0 0 0 0 0 0 0 0 3174 1276 1838 512 9840 688
+node "w_123_64#" 16758 0 123 64 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1712 246
+node "w_123_177#" 0 0 123 177 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_123_239#" 12059 0 123 239 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1232 186
+node "w_125_322#" 0 0 125 322 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Gnd" "a_400_98#" 2474
+cap "Vdd" "inbit" 564
+cap "m1_104_123#" "w_123_64#" 10528
+cap "clk" "nextSB0" 1800
+cap "nextSB1" "SB1" 960
+cap "Vdd" "nextSB1" 11494
+cap "Gnd" "a_446_n19#" 3744
+cap "sign" "Vdd" 15041
+cap "m1_129_25#" "w_123_n24#" 1880
+cap "Vdd" "SB1" 34754
+cap "reset" "nextSB1" 2340
+cap "shift" "a_408_74#" 880
+cap "shift" "nextSB0" 5560
+cap "add" "SB0" 1048
+cap "Gnd" "start" 22320
+cap "load" "nextSB0" 4488
+cap "nextSB0" "SB0" 240
+cap "sel0" "load" 114
+cap "m1_104_123#" "w_123_239#" 7802
+cap "sel0" "SB0" 114
+cap "reset" "Vdd" 5850
+cap "Gnd" "a_400_n17#" 3744
+cap "nextSB0" "nextSB1" 855
+cap "add" "Vdd" 564
+cap "nextSB0" "SB1" 240
+cap "shift" "a_400_98#" 720
+cap "Vdd" "nextSB0" 5420
+cap "sel0" "Vdd" 1820
+cap "m1_104_123#" "m1_84_n5#" 13860
+cap "nextSB1" "a_400_98#" 5478
+cap "a_446_n19#" "SB0" 675
+cap "reset" "nextSB0" 3645
+cap "sel1" "Vdd" 564
+cap "sign" "a_400_98#" 1080
+cap "w_125_322#" "m1_84_n5#" 5029
+cap "a_438_3#" "SB0" 1072
+cap "Vdd" "a_400_98#" 2286
+cap "Gnd" "shift" 8896
+cap "Vdd" "a_446_n19#" 4214
+cap "Gnd" "load" 12488
+cap "a_418_3#" "SB0" 1206
+cap "nextSB1" "start" 2688
+cap "Gnd" "SB0" 17562
+cap "Gnd" "inbit" 4292
+cap "a_400_n17#" "inbit" 960
+cap "nextSB1" "a_400_n17#" 5610
+cap "Gnd" "nextSB1" 16766
+cap "inbit" "a_418_n41#" 528
+cap "sign" "Gnd" 14728
+cap "Vdd" "start" 18269
+cap "sel1" "sel0" 764
+cap "nextSB1" "a_418_n41#" 264
+cap "m1_84_n5#" "w_123_n24#" 11092
+cap "Gnd" "SB1" 15100
+cap "Gnd" "Vdd" 8640
+cap "Vdd" "a_400_n17#" 4214
+cap "add" "a_446_n19#" 1908
+cap "a_428_98#" "load" 1408
+cap "clk" "nextSB1" 1800
+cap "w_123_177#" "m1_84_n5#" 7802
+cap "nextSB0" "start" 1968
+cap "add" "Gnd" 564
+cap "Gnd" "nextSB0" 11056
+cap "m1_104_123#" "w_123_n78#" 11562
+cap "a_428_n41#" "inbit" 704
+cap "Gnd" "sel0" 564
+cap "shift" "nextSB1" 2695
+cap "nextSB1" "SB0" 240
+cap "reset" "clk" 28665
+cap "nextSB1" "inbit" 4488
+cap "shift" "SB1" 240
+cap "Gnd" "sel1" 564
+cap "start" "a_400_98#" 896
+cap "shift" "Vdd" 3216
+cap "load" "SB1" 240
+cap "load" "Vdd" 2714
+cap "sign" "nextSB1" 95
+cap "Vdd" "SB0" 27855
+device mosfet nfet 470 -71 471 -70 2 40 "Gnd" "start" 4 0 "Gnd" 40 0 "nextSB1" 40 0
+device mosfet nfet 460 -71 461 -70 2 40 "Gnd" "start" 4 0 "nextSB1" 40 0 "Gnd" 40 0
+device mosfet pfet 436 -69 437 -68 2 18 "Vdd" "SB1" 4 0 "Vdd" 18 0 "nextSB1" 18 0
+device mosfet pfet 426 -69 427 -68 2 18 "Vdd" "SB0" 4 0 "nextSB1" 18 0 "Vdd" 18 0
+device mosfet pfet 416 -69 417 -68 2 18 "Vdd" "sign" 4 0 "Vdd" 18 0 "nextSB1" 18 0
+device mosfet nfet 436 -41 437 -40 2 10 "Gnd" "SB1" 4 0 "a_428_n41#" 10 0 "nextSB1" 10 0
+device mosfet nfet 426 -41 427 -40 2 10 "Gnd" "SB0" 4 0 "a_418_n41#" 10 0 "a_428_n41#" 10 0
+device mosfet nfet 416 -41 417 -40 2 10 "Gnd" "sign" 4 0 "Gnd" 10 0 "a_418_n41#" 10 0
+device mosfet nfet 464 -17 465 -16 2 10 "Gnd" "SB0" 4 0 "a_446_n19#" 10 0 "Gnd" 10 0
+device mosfet nfet 446 -17 447 -16 2 10 "Gnd" "a_446_n19#" 4 0 "add" 10 0 "Gnd" 10 0
+device mosfet nfet 436 -17 437 -16 2 10 "Gnd" "SB1" 4 0 "Gnd" 10 0 "add" 10 0
+device mosfet nfet 426 -17 427 -16 2 10 "Gnd" "SB0" 4 0 "inbit" 10 0 "Gnd" 10 0
+device mosfet nfet 416 -17 417 -16 2 10 "Gnd" "a_400_n17#" 4 0 "Gnd" 10 0 "inbit" 10 0
+device mosfet nfet 398 -17 399 -16 2 10 "Gnd" "SB1" 4 0 "Gnd" 10 0 "a_400_n17#" 10 0
+device mosfet pfet 464 3 465 4 2 20 "Vdd" "SB0" 4 0 "a_446_n19#" 20 0 "Vdd" 20 0
+device mosfet pfet 446 3 447 4 2 20 "Vdd" "a_446_n19#" 4 0 "a_438_3#" 20 0 "add" 20 0
+device mosfet pfet 436 3 437 4 2 20 "Vdd" "SB1" 4 0 "Vdd" 20 0 "a_438_3#" 20 0
+device mosfet pfet 426 3 427 4 2 20 "Vdd" "SB0" 4 0 "a_418_3#" 20 0 "Vdd" 20 0
+device mosfet pfet 416 3 417 4 2 20 "Vdd" "a_400_n17#" 4 0 "inbit" 20 0 "a_418_3#" 20 0
+device mosfet pfet 398 3 399 4 2 20 "Vdd" "SB1" 4 0 "Vdd" 20 0 "a_400_n17#" 20 0
+device mosfet pfet 464 44 465 45 2 20 "Vdd" "SB0" 4 0 "Vdd" 20 0 "sel1" 20 0
+device mosfet pfet 454 44 455 45 2 20 "Vdd" "load" 4 0 "sel0" 20 0 "Vdd" 20 0
+device mosfet pfet 436 44 437 45 2 20 "Vdd" "SB1" 4 0 "a_428_44#" 20 0 "load" 20 0
+device mosfet pfet 426 44 427 45 2 20 "Vdd" "SB0" 4 0 "Vdd" 20 0 "a_428_44#" 20 0
+device mosfet pfet 416 44 417 45 2 20 "Vdd" "SB0" 4 0 "shift" 20 0 "Vdd" 20 0
+device mosfet pfet 406 44 407 45 2 20 "Vdd" "SB1" 4 0 "Vdd" 20 0 "shift" 20 0
+device mosfet nfet 464 74 465 75 2 10 "Gnd" "SB0" 4 0 "Gnd" 10 0 "sel1" 10 0
+device mosfet nfet 454 74 455 75 2 10 "Gnd" "load" 4 0 "sel0" 10 0 "Gnd" 10 0
+device mosfet nfet 436 74 437 75 2 10 "Gnd" "SB1" 4 0 "load" 10 0 "Gnd" 10 0
+device mosfet nfet 426 74 427 75 2 10 "Gnd" "SB0" 4 0 "Gnd" 10 0 "load" 10 0
+device mosfet nfet 416 74 417 75 2 10 "Gnd" "SB0" 4 0 "a_408_74#" 10 0 "Gnd" 10 0
+device mosfet nfet 406 74 407 75 2 10 "Gnd" "SB1" 4 0 "shift" 10 0 "a_408_74#" 10 0
+device mosfet nfet 470 108 471 109 2 40 "Gnd" "start" 4 0 "Gnd" 40 0 "nextSB0" 40 0
+device mosfet nfet 460 108 461 109 2 40 "Gnd" "start" 4 0 "nextSB0" 40 0 "Gnd" 40 0
+device mosfet nfet 436 98 437 99 2 20 "Gnd" "SB1" 4 0 "a_428_98#" 20 0 "nextSB0" 20 0
+device mosfet nfet 426 98 427 99 2 20 "Gnd" "SB0" 4 0 "a_418_98#" 20 0 "a_428_98#" 20 0
+device mosfet nfet 416 98 417 99 2 20 "Gnd" "a_400_98#" 4 0 "Gnd" 20 0 "a_418_98#" 20 0
+device mosfet nfet 406 98 407 99 2 20 "Gnd" "sign" 4 0 "a_400_98#" 20 0 "Gnd" 20 0
+device mosfet pfet 436 128 437 129 2 18 "Vdd" "SB1" 4 0 "Vdd" 18 0 "nextSB0" 18 0
+device mosfet pfet 426 128 427 129 2 18 "Vdd" "SB0" 4 0 "nextSB0" 18 0 "Vdd" 18 0
+device mosfet pfet 416 128 417 129 2 18 "Vdd" "a_400_98#" 4 0 "Vdd" 18 0 "nextSB0" 18 0
+device mosfet pfet 406 128 407 129 2 18 "Vdd" "sign" 4 0 "a_400_98#" 18 0 "Vdd" 18 0
+cap "rego_0/a_85_n38#" "rego_0/w_0_n106#" -376
+cap "rego_0/w_0_n106#" "rego_0/w_0_n106#" -4042
+cap "rego_1/w_0_n106#" "rego_1/RST" 3948
+cap "rego_0/w_0_n18#" "rego_0/w_0_n18#" -3008
+cap "rego_1/w_0_n18#" "reset" 8648
+cap "reset" "rego_1/w_0_n106#" 752
+cap "rego_0/w_0_95#" "rego_0/w_0_95#" -752
+cap "rego_0/w_0_157#" "rego_0/w_0_157#" -752
+cap "rego_0/w_0_240#" "rego_0/w_0_240#" -846
+cap "rego_1/a_24_218#" "rego_0/w_0_240#" 1800
+cap "rego_1/w_0_240#" "nextSB0" 6210
+cap "rego_0/w_0_240#" "rego_0/a_24_218#" 540
+cap "rego_0/w_0_240#" "rego_1/a_24_218#" 3600
+cap "rego_1/w_0_240#" "nextSB0" 12420
+merge "rego_0/a_24_218#" "nextSB1" -342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -14 0 0
+merge "rego_1/w_0_240#" "rego_0/w_0_240#" -4230 0 0 0 0 0 0 0 0 0 0 0 0 -128 -176 0 0 0 0
+merge "rego_0/w_0_240#" "w_125_322#"
+merge "w_125_322#" "rego_1/w_0_95#"
+merge "rego_1/w_0_95#" "rego_0/w_0_95#"
+merge "rego_0/w_0_95#" "w_123_177#"
+merge "w_123_177#" "rego_1/w_0_n106#"
+merge "rego_1/w_0_n106#" "rego_0/w_0_n106#"
+merge "rego_0/w_0_n106#" "w_123_n24#"
+merge "w_123_n24#" "m1_84_n5#"
+merge "m1_84_n5#" "Gnd"
+merge "rego_1/REGOUT" "SB0" -494 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 -30 0 0
+merge "rego_1/INCLK" "rego_0/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rego_0/REGOUT" "SB1" -247 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13 -29 0 0
+merge "rego_1/RST" "reset" -18988 0 0 0 0 0 0 0 0 0 0 0 0 -320 -143 0 0 0 0
+merge "rego_1/a_24_218#" "nextSB0" -10944 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -456 -170 0 0
+merge "rego_1/w_0_157#" "rego_0/w_0_157#" -5264 0 0 0 0 0 0 0 0 0 0 0 0 -192 -184 0 0 -1110 -764
+merge "rego_0/w_0_157#" "w_123_239#"
+merge "w_123_239#" "rego_1/w_0_n18#"
+merge "rego_1/w_0_n18#" "rego_0/w_0_n18#"
+merge "rego_0/w_0_n18#" "w_123_64#"
+merge "w_123_64#" "rego_1/w_0_n160#"
+merge "rego_1/w_0_n160#" "rego_0/w_0_n160#"
+merge "rego_0/w_0_n160#" "w_123_n78#"
+merge "w_123_n78#" "m1_104_123#"
+merge "m1_104_123#" "Vdd"
+merge "rego_1/a_85_n38#" "rego_0/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "rego_0/a_85_n38#" "m1_129_25#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -18 0 0 0 0
+merge "rego_1/CLK" "clk" -2820 0 0 0 0 0 0 0 0 0 0 0 0 -60 -32 0 0 0 0

@@ -1,0 +1,867 @@
+timestamp 1428597279
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use datapathL datapathL_0[0:7:110][0:0:1803] 1 0 30 0 1 562
+use rego rego_2 1 0 993 0 -1 1840
+use rego rego_3 1 0 1103 0 -1 1840
+use rego rego_5 1 0 1213 0 -1 1840
+use rego rego_6 1 0 1323 0 -1 1840
+use rego rego_7 1 0 1433 0 -1 1840
+use rego rego_8 1 0 1543 0 -1 1840
+use rego rego_4 1 0 993 0 1 1275
+use rego rego_1 1 0 1213 0 1 1275
+use rego rego_0 1 0 1323 0 1 1275
+use and and_0 1 0 1736 0 1 1385
+use smlogic smlogic_0 1 0 1304 0 1 1193
+use datapathS datapathS_0[0:7:110][0:0:974] 1 0 910 0 1 562
+node "dividendin_0" 1 4674 1774 994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 608 274 0 0
+node "dividendin_1" 1 10526 1665 994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1092 508 0 0
+node "dividendin_2" 2 6878 1555 994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1580 744 0 0
+node "dividendin_3" 3 28766 1445 994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2068 980 0 0
+node "dividendin_4" 4 38038 1335 994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2556 1216 0 0
+node "dividendin_5" 4 46094 1225 994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3044 1452 0 0
+node "dividendin_6" 5 55366 1115 994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3532 1688 0 0
+node "dividendin_7" 6 64638 1005 994 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4020 1924 0 0
+node "m2_1229_1542#" 2 65094 1229 1542 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3426 1154 0 0
+node "m2_995_1126#" 2 50597 995 1126 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3054 1030 0 0
+node "m2_1496_1984#" 2 51642 1496 1984 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2718 918 0 0
+node "m2_1275_1984#" 2 51756 1275 1984 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2724 920 0 0
+node "m2_1163_1984#" 2 51414 1163 1984 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2706 914 0 0
+node "m2_1056_1984#" 2 51642 1056 1984 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2718 918 0 0
+node "quotient_0" 0 12311 1731 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "quotient_1" 0 12311 1621 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "quotient_2" 0 12311 1511 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "quotient_3" 0 12311 1401 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "quotient_4" 0 12311 1291 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "quotient_5" 0 12311 1181 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "quotient_6" 0 12311 1071 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "quotient_7" 0 12311 961 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "m1_851_11#" 0 12311 851 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "remainder_0" 0 12311 741 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "remainder_1" 0 12311 631 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "remainder_2" 0 12311 521 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "remainder_3" 0 12311 411 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "remainder_4" 0 12311 301 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "remainder_5" 0 12311 191 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "remainder_6" 0 12311 81 11 v 0 0 0 0 0 0 0 0 0 0 0 0 78 38 533 108 0 0
+node "m1_1790_123#" 3 18392 1790 123 m1 0 0 0 0 0 0 0 0 0 0 0 0 304 108 7608 1918 0 0
+node "INBIT" 6 67424 1812 493 v 0 0 0 0 0 0 0 0 0 0 0 0 584 308 2468 1206 0 0
+node "start" 1 7288 1751 1135 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 456 236 0 0
+node "m1_1779_1260#" 6 72320 1779 1260 m1 0 0 0 0 0 0 0 0 0 0 0 0 1128 574 1308 670 0 0
+node "m1_1779_1314#" 8 106430 1779 1314 m1 0 0 0 0 0 0 0 0 0 0 0 0 1384 716 2474 1200 0 0
+node "reset" 0 3008 1844 1344 v 0 0 0 0 0 0 0 0 0 0 0 0 64 32 64 32 0 0
+node "m1_1671_1363#" 0 3807 1671 1363 m1 0 0 0 0 0 0 0 0 0 0 0 0 81 36 0 0 0 0
+node "m1_1655_1390#" 1 30409 1655 1390 m1 0 0 0 0 0 0 0 0 0 0 0 0 655 202 0 0 0 0
+node "m1_1336_1477#" 0 6392 1336 1477 m1 0 0 0 0 0 0 0 0 0 0 0 0 136 50 0 0 0 0
+node "m1_910_1446#" 1 57664 910 1446 m1 0 0 0 0 0 0 0 0 0 0 0 0 344 118 2776 596 0 0
+node "m1_1651_1743#" 2 33233 1651 1743 v 0 0 0 0 0 0 0 0 0 0 0 0 665 170 3070 772 0 0
+node "m1_1424_1372#" 2 44716 1424 1372 m1 0 0 0 0 0 0 0 0 0 0 0 0 189 90 2202 746 0 0
+node "m1_989_1743#" 0 29328 989 1743 v 0 0 0 0 0 0 0 0 0 0 0 0 130 46 1560 272 0 0
+node "m1_1651_1889#" 2 76473 1651 1889 v 0 0 0 0 0 0 0 0 0 0 0 0 80 36 5770 1188 0 0
+node "divisorin_0" 0 2778 813 1828 v 0 0 0 0 0 0 0 0 0 0 0 0 30 22 246 94 0 0
+node "divisorin_1" 0 2778 703 1828 v 0 0 0 0 0 0 0 0 0 0 0 0 30 22 246 94 0 0
+node "divisorin_2" 0 2778 593 1828 v 0 0 0 0 0 0 0 0 0 0 0 0 30 22 246 94 0 0
+node "divisorin_3" 0 2778 483 1829 v 0 0 0 0 0 0 0 0 0 0 0 0 30 22 246 94 0 0
+node "divisorin_4" 0 2778 373 1829 v 0 0 0 0 0 0 0 0 0 0 0 0 30 22 246 94 0 0
+node "divisorin_5" 0 2778 263 1828 v 0 0 0 0 0 0 0 0 0 0 0 0 30 22 246 94 0 0
+node "divisorin_6" 0 2778 153 1829 v 0 0 0 0 0 0 0 0 0 0 0 0 30 22 246 94 0 0
+node "m1_43_1821#" 0 4182 43 1821 m1 0 0 0 0 0 0 0 0 0 0 0 0 72 36 246 94 0 0
+node "m1_1414_1946#" 2 55896 1414 1946 v 0 0 0 0 0 0 0 0 0 0 0 0 156 64 2628 900 0 0
+node "m1_1640_1316#" 2 741796 1640 1316 v 0 0 0 0 0 0 0 0 0 0 0 0 15284 1500 1564 394 0 0
+node "Vdd" 5 5.31222e+06 -36 1840 m1 0 0 0 0 0 0 0 0 0 0 0 0 113026 6550 0 0 0 0
+node "valid" 0 9113 1594 2029 v 0 0 0 0 0 0 0 0 0 0 0 0 52 34 611 120 0 0
+node "a_1790_745#" 43 67672 1790 745 pc 0 0 0 0 40 26 0 0 0 0 0 0 1024 516 1220 626 0 0
+node "a_1755_1055#" 33 0 1755 1055 ndiff 80 36 0 0 0 0 0 0 0 0 0 0 40 28 0 0 0 0
+node "a_1755_1075#" 135 0 1755 1075 pdiff 0 0 144 52 0 0 0 0 0 0 0 0 168 92 0 0 0 0
+node "a_1737_1075#" 179 0 1737 1075 pdiff 0 0 108 48 0 0 0 0 0 0 0 0 179 98 0 0 0 0
+node "a_1729_1055#" 230 328754 1729 1055 ndc 60 32 108 48 0 0 0 0 0 0 0 0 6286 1648 5128 1298 0 0
+node "a_1763_1053#" 575 42154 1763 1053 p 0 0 0 0 108 106 0 0 0 0 0 0 908 470 84 50 0 0
+node "a_1735_1053#" 1055 4872 1735 1053 p 60 32 216 96 96 94 0 0 0 0 0 0 360 188 0 0 0 0
+node "a_1750_1097#" 576 50081 1750 1097 pc 0 0 0 0 108 106 0 0 0 0 0 0 924 282 6990 1784 0 0
+node "a_914_1158#" 199 470 914 1158 pdiff 0 0 120 52 0 0 0 0 0 0 0 0 320 150 0 0 0 0
+node "REGOUT" 607 11058 1136 1135 p 50 30 100 50 314 138 0 0 0 0 0 0 1006 182 3840 1222 0 0
+node "a_906_1158#" 243 752 906 1158 pdc 60 32 120 52 0 0 0 0 0 0 0 0 160 88 0 0 0 0
+node "a_912_1156#" 533 363307 912 1156 p 0 0 0 0 104 100 0 0 0 0 0 0 7088 1998 3076 826 0 0
+node "a_1188_1237#" 293 0 1188 1237 ndc 50 30 100 50 0 0 0 0 0 0 0 0 1283 356 0 0 0 0
+node "REGOUTn" 1736 11356 1130 1227 ndiff 100 60 395 188 258 130 0 0 0 0 0 0 1545 390 910 202 0 0
+node "a_1130_1220#" 804 5022 1130 1220 ndc 100 60 200 100 0 0 0 0 0 0 0 0 1562 430 588 150 0 0
+node "RST" 810 2130 1193 1215 p 0 0 0 0 514 272 0 0 0 0 0 0 80 36 0 0 0 0
+node "a_1168_1264#" 1432 4704 1168 1264 p 50 30 100 50 803 400 0 0 0 0 0 0 390 112 0 0 0 0
+node "a_1740_1329#" 394 8174 1740 1329 p 0 0 0 0 66 70 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1730_1328#" 441 9126 1730 1328 p 0 0 0 0 74 78 0 0 0 0 0 0 0 0 0 0 0 0
+node "SB1" 286 6032 1740 1410 p 0 0 0 0 48 52 0 0 0 0 0 0 0 0 0 0 0 0
+node "SB0" 286 6032 1730 1410 p 0 0 0 0 48 52 0 0 0 0 0 0 0 0 0 0 0 0
+node "CLK" 374 7656 1185 1336 p 0 0 0 0 334 154 0 0 0 0 0 0 136 52 0 0 0 0
+node "sign" 1217 1.08108e+06 1707 1433 p 0 0 0 0 280 242 0 0 0 0 0 0 20012 4972 6928 1748 0 0
+node "REGMEM" 1094 15132 1127 1411 ndiff 100 60 200 100 384 148 0 0 0 0 0 0 1549 296 1480 406 0 0
+node "INCLKn" 2025 14992 1125 1498 p 50 30 100 50 1014 550 0 0 0 0 0 0 1556 410 2685 532 0 0
+node "a_1170_1493#" 803 5814 1170 1493 pdc 100 60 200 100 0 0 0 0 0 0 0 0 1263 320 979 200 0 0
+node "a_1114_1423#" 1144 22392 1114 1423 p 100 60 200 100 258 130 0 0 0 0 0 0 1405 252 1001 204 0 0
+node "INCLK" 1594 16824 1118 1233 p 50 30 100 50 1070 492 0 0 0 0 0 0 1196 298 2341 514 0 0
+node "a_1127_1493#" 295 55798 1127 1493 pdc 50 30 100 50 0 0 0 0 0 0 0 0 456 166 3624 1220 0 0
+node "clk" 49 618232 910 1635 pc 0 0 0 0 40 26 0 0 0 0 0 0 12136 3066 3032 774 0 0
+equiv "clk" "CLK"
+node "w_1727_986#" 0 0 1727 986 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1711_1071#" 3377 0 1711 1071 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2852 216
+node "w_1103_1115#" 6651 0 1103 1115 nw 252 114 200 100 0 0 0 0 0 0 0 0 2176 356 0 0 5280 316
+node "w_1103_1169#" 1069 0 1103 1169 pw 200 120 252 114 0 0 0 0 0 0 0 0 2152 392 0 0 0 0
+node "w_903_1121#" 7384 0 903 1121 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1465 176
+node "w_1103_1257#" 4813 0 1103 1257 nw 231 108 595 288 0 0 0 0 0 0 0 0 2560 548 0 0 11770 434
+node "w_902_1185#" 0 0 902 1185 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1425_1370#" 0 0 1425 1370 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1103_1370#" 1069 0 1103 1370 pw 200 120 252 114 0 0 0 0 0 0 0 0 2224 368 0 0 0 0
+node "w_1103_1432#" 4488 0 1103 1432 nw 252 114 200 100 0 0 0 0 0 0 0 0 2160 352 0 0 8470 374
+node "GND" 936 4.79856e+06 993 1542 pw 180 96 252 114 0 0 0 0 0 0 0 0 110568 8172 0 0 0 0
+cap "dividendin_6" "w_1711_1071#" 2280
+cap "dividendin_4" "m1_1779_1260#" 720
+cap "m1_1651_1743#" "m1_1640_1316#" 123840
+cap "w_1103_1432#" "REGMEM" 32045
+cap "a_1750_1097#" "dividendin_0" 1440
+cap "sign" "m1_1640_1316#" 120
+cap "INBIT" "m1_1779_1260#" 720
+cap "a_1170_1493#" "INCLKn" 3390
+cap "a_1790_745#" "dividendin_7" 720
+cap "GND" "INCLKn" 9946
+cap "a_912_1156#" "dividendin_1" 2880
+cap "valid" "sign" 4680
+cap "dividendin_7" "m1_1779_1314#" 720
+cap "m1_910_1446#" "m2_995_1126#" 1440
+cap "a_1737_1075#" "w_1711_1071#" 5029
+cap "dividendin_7" "GND" 7290
+cap "REGOUT" "w_1103_1115#" 54160
+cap "a_912_1156#" "dividendin_0" 3240
+cap "a_1755_1075#" "dividendin_7" 1072
+cap "INCLK" "INCLKn" 2033
+cap "dividendin_2" "a_1790_745#" 720
+cap "m2_995_1126#" "GND" 14621
+cap "m1_1655_1390#" "m1_1651_1889#" 3960
+cap "w_1727_986#" "dividendin_1" 1064
+cap "dividendin_2" "m1_1779_1314#" 720
+cap "dividendin_2" "GND" 8730
+cap "REGMEM" "INCLKn" 3078
+cap "dividendin_4" "a_1763_1053#" 114
+cap "dividendin_7" "a_1735_1053#" 1792
+cap "w_1711_1071#" "dividendin_5" 3078
+cap "a_1750_1097#" "a_1790_745#" 1260
+cap "dividendin_4" "a_1755_1055#" 268
+cap "dividendin_4" "a_1729_1055#" 2924
+cap "a_1790_745#" "dividendin_6" 720
+cap "a_1188_1237#" "a_1130_1220#" 3240
+cap "INBIT" "a_1763_1053#" 720
+cap "INCLK" "w_1103_1257#" 61511
+cap "a_1750_1097#" "m1_1779_1314#" 1260
+cap "a_1750_1097#" "GND" 271440
+cap "dividendin_6" "m1_1779_1314#" 720
+cap "dividendin_6" "GND" 7290
+cap "start" "a_1790_745#" 720
+cap "w_1103_1257#" "REGMEM" 20577
+cap "start" "m1_1779_1314#" 720
+cap "m1_1655_1390#" "sign" 240
+cap "a_1750_1097#" "a_1755_1075#" 1260
+cap "Vdd" "sign" 34560
+cap "dividendin_6" "a_1755_1075#" 1072
+cap "w_1103_1257#" "CLK" 6300
+cap "a_1114_1423#" "w_1103_1370#" 4736
+cap "Vdd" "divisorin_4" 6480
+cap "a_1750_1097#" "a_1735_1053#" 240
+cap "dividendin_6" "a_1735_1053#" 1792
+cap "REGOUT" "GND" 17544
+cap "m1_1779_1260#" "a_1763_1053#" 720
+cap "a_1750_1097#" "dividendin_3" 1440
+cap "a_1168_1264#" "a_1188_1237#" 3810
+cap "INCLK" "REGOUT" 2700
+cap "a_912_1156#" "GND" 18000
+cap "w_902_1185#" "GND" 10340
+cap "a_1790_745#" "dividendin_5" 720
+cap "a_1170_1493#" "w_1103_1370#" 10810
+cap "GND" "dividendin_5" 7290
+cap "m1_1779_1314#" "dividendin_5" 720
+cap "w_1727_986#" "GND" 74260
+cap "w_903_1121#" "a_906_1158#" 564
+cap "dividendin_3" "a_912_1156#" 2880
+cap "Vdd" "divisorin_0" 6480
+cap "a_1755_1075#" "dividendin_5" 268
+cap "clk" "sign" 480
+cap "INBIT" "dividendin_7" 720
+cap "INCLK" "w_1103_1370#" 22802
+cap "a_1735_1053#" "dividendin_5" 1642
+cap "m1_1424_1372#" "GND" 2574
+cap "w_1727_986#" "a_1735_1053#" 2474
+cap "w_1103_1257#" "a_1130_1220#" 10810
+cap "w_902_1185#" "a_906_1158#" 564
+cap "w_1103_1370#" "REGMEM" 29697
+cap "INBIT" "dividendin_2" 720
+cap "dividendin_3" "w_1727_986#" 1064
+cap "w_1103_1370#" "CLK" 6300
+cap "INCLK" "w_1103_1169#" 12482
+cap "a_1790_745#" "dividendin_1" 720
+cap "a_1750_1097#" "dividendin_4" 1554
+cap "m1_1779_1314#" "dividendin_1" 720
+cap "GND" "dividendin_1" 13050
+cap "m1_1779_1260#" "dividendin_7" 720
+cap "INBIT" "a_1750_1097#" 1260
+cap "REGMEM" "w_1103_1169#" 1645
+cap "SB1" "clk" 480
+cap "INBIT" "dividendin_6" 720
+cap "a_1790_745#" "dividendin_0" 720
+cap "INBIT" "start" 720
+cap "dividendin_0" "m1_1779_1314#" 720
+cap "w_1103_1257#" "RST" 16517
+cap "dividendin_0" "GND" 7290
+cap "a_1755_1075#" "w_1711_1071#" 4512
+cap "dividendin_2" "m1_1779_1260#" 720
+cap "a_1170_1493#" "a_1114_1423#" 1304
+cap "a_1168_1264#" "w_1103_1257#" 32726
+cap "a_1127_1493#" "w_1103_1432#" 6580
+cap "a_1114_1423#" "GND" 12925
+cap "w_1711_1071#" "a_1735_1053#" 4662
+cap "dividendin_4" "a_912_1156#" 2880
+cap "a_1750_1097#" "m1_1779_1260#" 1260
+cap "dividendin_6" "m1_1779_1260#" 720
+cap "valid" "clk" 4680
+cap "INBIT" "a_912_1156#" 720
+cap "start" "m1_1779_1260#" 720
+cap "INCLK" "a_1114_1423#" 10350
+cap "a_1188_1237#" "REGOUTn" 12690
+cap "m1_1424_1372#" "w_1425_1370#" 2585
+cap "a_1114_1423#" "REGMEM" 10014
+cap "dividendin_4" "w_1727_986#" 2090
+cap "Vdd" "divisorin_6" 6480
+cap "dividendin_7" "a_1729_1055#" 3056
+cap "w_1103_1257#" "a_1188_1237#" 4512
+cap "m1_910_1446#" "GND" 20880
+cap "m1_989_1743#" "GND" 9360
+cap "INBIT" "dividendin_5" 720
+cap "w_1103_1432#" "INCLKn" 50434
+cap "a_1790_745#" "GND" 9180
+cap "a_1170_1493#" "GND" 5499
+cap "GND" "m1_1779_1314#" 10620
+cap "dividendin_2" "a_1729_1055#" 33120
+cap "m1_1790_123#" "dividendin_1" 1440
+cap "Vdd" "clk" 5760
+cap "a_1130_1220#" "w_1103_1169#" 29909
+cap "a_1750_1097#" "a_1763_1053#" 1260
+cap "a_1170_1493#" "INCLK" 76
+cap "dividendin_6" "a_1729_1055#" 3056
+cap "dividendin_0" "m1_1790_123#" 1440
+cap "start" "a_1763_1053#" 720
+cap "INCLK" "GND" 18584
+cap "m1_1779_1260#" "dividendin_5" 720
+cap "a_1790_745#" "dividendin_3" 720
+cap "REGOUT" "a_1188_1237#" 4410
+cap "INBIT" "dividendin_1" 720
+cap "dividendin_3" "m1_1779_1314#" 720
+cap "dividendin_3" "GND" 9082
+cap "clk" "GND" 11520
+cap "w_1103_1169#" "RST" 19003
+cap "INBIT" "dividendin_0" 720
+cap "INCLK" "REGMEM" 19068
+cap "a_1168_1264#" "w_1103_1169#" 17240
+cap "a_912_1156#" "a_1763_1053#" 720
+cap "REGOUTn" "INCLKn" 21723
+cap "REGOUT" "w_1103_1432#" 11274
+cap "Vdd" "divisorin_2" 6480
+cap "dividendin_3" "a_1735_1053#" 896
+cap "w_1103_1115#" "a_1130_1220#" 19402
+cap "w_1103_1257#" "INCLKn" 56505
+cap "m1_1779_1260#" "dividendin_1" 720
+cap "w_1103_1257#" "REGOUTn" 16356
+cap "w_1727_986#" "a_1763_1053#" 1670
+cap "a_1763_1053#" "dividendin_5" 114
+cap "m1_1779_1260#" "dividendin_0" 720
+cap "a_1729_1055#" "dividendin_5" 2924
+cap "w_1727_986#" "a_1729_1055#" 3384
+cap "GND" "m1_1790_123#" 329040
+cap "a_1188_1237#" "w_1103_1169#" 44180
+cap "a_1750_1097#" "dividendin_7" 1440
+cap "a_1790_745#" "dividendin_4" 720
+cap "Vdd" "divisorin_1" 6480
+cap "Vdd" "m1_43_1821#" 6480
+cap "dividendin_4" "m1_1779_1314#" 720
+cap "w_903_1121#" "a_914_1158#" 10810
+cap "dividendin_4" "GND" 7738
+cap "INBIT" "a_1790_745#" 720
+cap "a_1750_1097#" "dividendin_2" 1440
+cap "INBIT" "GND" 10620
+cap "REGOUT" "REGOUTn" 4500
+cap "Vdd" "divisorin_3" 6480
+cap "w_1711_1071#" "a_1763_1053#" 5224
+cap "dividendin_4" "a_1735_1053#" 878
+cap "a_1750_1097#" "dividendin_6" 1440
+cap "REGOUT" "w_1103_1257#" 14466
+cap "dividendin_7" "a_1737_1075#" 896
+cap "a_912_1156#" "dividendin_7" 2880
+cap "w_1711_1071#" "a_1729_1055#" 752
+cap "INCLK" "a_1130_1220#" 3818
+cap "Vdd" "divisorin_5" 6480
+cap "INBIT" "dividendin_3" 720
+cap "REGMEM" "a_1130_1220#" 1260
+cap "m1_1779_1260#" "GND" 9180
+cap "w_1103_1370#" "INCLKn" 31855
+cap "dividendin_2" "a_912_1156#" 2880
+cap "dividendin_6" "a_1737_1075#" 896
+cap "a_1750_1097#" "a_912_1156#" 1260
+cap "w_1103_1169#" "INCLKn" 9138
+cap "dividendin_6" "a_912_1156#" 2880
+cap "a_1114_1423#" "w_1103_1432#" 30363
+cap "dividendin_2" "w_1727_986#" 2432
+cap "m1_1651_1743#" "m1_1651_1889#" 5850
+cap "REGOUTn" "w_1103_1169#" 32107
+cap "start" "a_912_1156#" 720
+cap "dividendin_3" "m1_1779_1260#" 720
+cap "a_1114_1423#" "a_1127_1493#" 2222
+cap "a_1750_1097#" "dividendin_5" 1554
+cap "m1_910_1446#" "a_1729_1055#" 2880
+cap "a_1750_1097#" "w_1727_986#" 1670
+cap "w_903_1121#" "a_912_1156#" 3225
+cap "a_1790_745#" "a_1763_1053#" 720
+cap "m1_1651_1743#" "sign" 120
+cap "dividendin_7" "w_1711_1071#" 2280
+cap "GND" "a_1729_1055#" 121680
+cap "INBIT" "dividendin_4" 720
+cap "REGOUT" "w_1103_1370#" 8652
+cap "a_1170_1493#" "w_1103_1432#" 37001
+cap "w_902_1185#" "a_912_1156#" 3396
+cap "a_1763_1053#" "a_1735_1053#" 240
+cap "REGOUTn" "w_1103_1115#" 5864
+cap "m1_1651_1889#" "m1_1640_1316#" 74025
+cap "a_1737_1075#" "dividendin_5" 224
+cap "a_912_1156#" "dividendin_5" 2880
+cap "a_912_1156#" "w_1727_986#" 14448
+cap "clk" "SB0" 480
+cap "REGOUT" "w_1103_1169#" 28690
+cap "a_1127_1493#" "GND" 35830
+cap "a_1750_1097#" "dividendin_1" 1440
+cap "dividendin_3" "a_1755_1055#" 1072
+cap "dividendin_3" "a_1729_1055#" 3056
+cap "INCLK" "w_1103_1432#" 21135
+cap "a_1750_1097#" "w_1711_1071#" 8347
+device mosfet nfet 1763 1055 1764 1056 2 10 "w_1727_986#" "a_1763_1053#" 4 0 "a_1755_1055#" 10 0 "GND" 10 0
+device mosfet nfet 1753 1055 1754 1056 2 10 "w_1727_986#" "a_1750_1097#" 4 0 "a_1735_1053#" 10 0 "a_1755_1055#" 10 0
+device mosfet nfet 1735 1055 1736 1056 2 10 "w_1727_986#" "a_1735_1053#" 4 0 "a_1729_1055#" 10 0 "GND" 10 0
+device mosfet pfet 1763 1075 1764 1076 2 18 "w_1711_1071#" "a_1763_1053#" 4 0 "a_1755_1075#" 18 0 "a_1735_1053#" 18 0
+device mosfet pfet 1753 1075 1754 1076 2 18 "w_1711_1071#" "a_1750_1097#" 4 0 "a_1735_1053#" 18 0 "a_1755_1075#" 18 0
+device mosfet pfet 1735 1075 1736 1076 2 18 "w_1711_1071#" "a_1735_1053#" 4 0 "a_1729_1055#" 18 0 "a_1737_1075#" 18 0
+device mosfet pfet 1178 1137 1179 1138 2 20 "w_1103_1115#" "REGOUTn" 4 0 "REGOUT" 20 0 "w_1103_1115#" 20 0
+device mosfet pfet 1136 1137 1137 1138 2 20 "w_1103_1115#" "REGOUT" 4 0 "a_1130_1220#" 20 0 "w_1103_1115#" 20 0
+device mosfet nfet 1178 1175 1179 1176 2 10 "w_1103_1169#" "REGOUTn" 4 0 "REGOUT" 10 0 "w_1103_1169#" 10 0
+device mosfet nfet 1136 1175 1137 1176 2 10 "w_1103_1169#" "REGOUT" 4 0 "a_1130_1220#" 10 0 "w_1103_1169#" 10 0
+device mosfet pfet 912 1158 913 1159 2 20 "w_903_1121#" "a_912_1156#" 4 0 "a_906_1158#" 20 0 "a_914_1158#" 20 0
+device mosfet nfet 912 1188 913 1189 2 10 "w_902_1185#" "a_912_1156#" 4 0 "a_906_1158#" 10 0 "GND" 10 0
+device mosfet nfet 1193 1217 1194 1218 2 10 "w_1103_1169#" "RST" 4 0 "a_1168_1264#" 10 0 "w_1103_1169#" 10 0
+device mosfet nfet 1193 1237 1194 1238 2 10 "w_1103_1169#" "a_1168_1264#" 4 0 "a_1188_1237#" 10 0 "w_1103_1169#" 10 0
+device mosfet nfet 1130 1225 1131 1226 2 10 "w_1103_1169#" "INCLK" 4 0 "a_1130_1220#" 10 0 "REGOUTn" 10 0
+device mosfet pfet 1193 1263 1194 1264 2 20 "w_1103_1257#" "a_1168_1264#" 4 0 "a_1188_1237#" 20 0 "w_1103_1257#" 20 0
+device mosfet nfet 1130 1243 1131 1244 2 10 "w_1103_1169#" "INCLKn" 4 0 "REGOUTn" 10 0 "REGMEM" 10 0
+device mosfet pfet 1193 1292 1194 1293 2 20 "w_1103_1257#" "RST" 4 0 "a_1168_1264#" 20 0 "w_1103_1257#" 20 0
+device mosfet pfet 1168 1273 1169 1274 2 39 "w_1103_1257#" "a_1168_1264#" 4 0 "REGOUTn" 39 0 "w_1103_1257#" 39 0
+device mosfet pfet 1130 1274 1131 1275 2 20 "w_1103_1257#" "INCLK" 4 0 "REGMEM" 20 0 "REGOUTn" 20 0
+device mosfet pfet 1130 1292 1131 1293 2 20 "w_1103_1257#" "INCLKn" 4 0 "REGOUTn" 20 0 "a_1130_1220#" 20 0
+device mosfet pfet 1185 1338 1186 1339 2 20 "w_1103_1257#" "CLK" 4 0 "INCLKn" 20 0 "w_1103_1257#" 20 0
+device mosfet pfet 1148 1338 1149 1339 2 20 "w_1103_1257#" "INCLKn" 4 0 "INCLK" 20 0 "w_1103_1257#" 20 0
+device mosfet nfet 1185 1376 1186 1377 2 10 "w_1103_1370#" "CLK" 4 0 "INCLKn" 10 0 "w_1103_1370#" 10 0
+device mosfet nfet 1148 1376 1149 1377 2 10 "w_1103_1370#" "INCLKn" 4 0 "INCLK" 10 0 "w_1103_1370#" 10 0
+device mosfet nfet 1177 1411 1178 1412 2 10 "w_1103_1370#" "REGMEM" 4 0 "w_1103_1370#" 10 0 "a_1170_1493#" 10 0
+device mosfet nfet 1125 1411 1126 1412 2 10 "w_1103_1370#" "a_1114_1423#" 4 0 "w_1103_1370#" 10 0 "REGMEM" 10 0
+device mosfet pfet 1177 1439 1178 1440 2 20 "w_1103_1432#" "REGMEM" 4 0 "w_1103_1432#" 20 0 "a_1170_1493#" 20 0
+device mosfet pfet 1125 1439 1126 1440 2 20 "w_1103_1432#" "a_1114_1423#" 4 0 "w_1103_1432#" 20 0 "REGMEM" 20 0
+device mosfet pfet 1170 1498 1171 1499 2 20 "w_1103_1432#" "INCLK" 4 0 "a_1170_1493#" 20 0 "a_1114_1423#" 20 0
+device mosfet pfet 1127 1498 1128 1499 2 20 "w_1103_1432#" "INCLKn" 4 0 "a_1127_1493#" 20 0 "a_1114_1423#" 20 0
+device mosfet nfet 1180 1525 1181 1526 2 10 "GND" "INCLKn" 4 0 "a_1114_1423#" 10 0 "a_1170_1493#" 10 0
+device mosfet nfet 1127 1525 1128 1526 2 10 "GND" "INCLK" 4 0 "a_1114_1423#" 10 0 "a_1127_1493#" 10 0
+cap "datapathL_0[0]/adder_0/w_0_0#" "datapathL_0[0]/adder_0/sum" 12784
+cap "datapathL_0[0]/m2_0_n21#" "datapathL_0[0]/adder_0/w_0_0#" -1938
+cap "datapathL_0[0]/m2_0_n21#" "datapathL_0[0]/adder_0/sum" 4590
+cap "dividendin_4" "smlogic_0/m1_348_25#" 1440
+cap "dividendin_2" "smlogic_0/m1_348_25#" 1440
+cap "dividendin_3" "smlogic_0/m1_348_25#" 1440
+cap "datapathS_0[7]/mux_0/w_n20_399#" "datapathS_0[7]/mux_0/w_n20_399#" -423
+cap "dividendin_5" "smlogic_0/m1_348_25#" 1440
+cap "datapathL_0[7]/adder_0/w_0_49#" "datapathL_0[7]/adder_0/w_0_49#" -658
+cap "rego_4/w_0_n160#" "rego_4/REGOUT" 15698
+cap "rego_4/w_0_n106#" "rego_4/REGOUT" 1140
+cap "rego_1/REGOUT" "rego_1/w_0_n160#" 15210
+cap "rego_1/REGOUT" "rego_1/w_0_n106#" 1140
+cap "rego_1/w_0_n106#" "m2_1229_1542#" 1140
+cap "m2_1229_1542#" "rego_1/w_0_n160#" 11746
+cap "rego_0/REGOUT" "rego_0/w_0_n160#" 2336
+cap "smlogic_0/start" "smlogic_0/nextSB1" 896
+cap "smlogic_0/start" "smlogic_0/Gnd" 152
+cap "w_1711_1071#" "smlogic_0/SB0" 4242
+cap "w_1711_1071#" "smlogic_0/SB1" 5841
+cap "w_1711_1071#" "smlogic_0/start" 112
+cap "smlogic_0/Gnd" "start" 896
+cap "dividendin_7" "smlogic_0/m1_348_25#" 1440
+cap "smlogic_0/m1_347_169#" "start" 1440
+cap "w_1711_1071#" "smlogic_0/Vdd" 846
+cap "dividendin_6" "smlogic_0/m1_348_25#" 1440
+cap "smlogic_0/m1_348_25#" "start" 1440
+cap "smlogic_0/Gnd" "start" 684
+cap "m2_995_1126#" "rego_4/w_0_n106#" 2160
+cap "rego_4/w_0_n106#" "m2_995_1126#" 4902
+cap "rego_4/w_0_n18#" "m2_995_1126#" 2508
+cap "m2_995_1126#" "rego_4/a_85_n38#" 2070
+cap "a_1127_1493#" "rego_1/w_0_n18#" 2508
+cap "rego_1/w_0_n106#" "a_1127_1493#" 4320
+cap "a_1127_1493#" "rego_1/a_85_n38#" 4410
+cap "a_1127_1493#" "rego_1/w_0_n106#" 4522
+cap "m2_1229_1542#" "rego_1/w_0_n106#" 4522
+cap "m2_1229_1542#" "rego_0/a_85_n38#" 4410
+cap "m2_1229_1542#" "rego_1/w_0_n18#" 2508
+cap "m2_1229_1542#" "rego_1/w_0_n106#" 4320
+cap "rego_0/w_0_n106#" "rego_0/w_0_n106#" -752
+cap "m2_995_1126#" "rego_4/w_0_95#" 798
+cap "rego_4/w_0_n18#" "m2_995_1126#" 7638
+cap "rego_4/w_0_n18#" "m2_995_1126#" 4320
+cap "m2_995_1126#" "rego_4/INCLK" 2700
+cap "CLK" "a_1127_1493#" 2700
+cap "a_1127_1493#" "rego_1/w_0_n18#" 4320
+cap "rego_1/w_0_95#" "a_1127_1493#" 798
+cap "a_1127_1493#" "rego_1/w_0_n18#" 7638
+cap "rego_1/w_0_n18#" "m2_1229_1542#" 4320
+cap "rego_0/INCLK" "m2_1229_1542#" 2700
+cap "rego_1/w_0_n18#" "m2_1229_1542#" 7638
+cap "rego_1/w_0_95#" "m2_1229_1542#" 798
+cap "rego_0/w_0_n18#" "rego_0/w_0_n18#" -752
+cap "rego_0/w_0_95#" "rego_0/CLK" 47
+cap "smlogic_0/rego_1/CLK" "smlogic_0/rego_1/w_0_n18#" 3150
+cap "smlogic_0/rego_1/w_0_95#" "smlogic_0/rego_1/w_0_n18#" 931
+cap "smlogic_0/rego_1/w_0_n18#" "smlogic_0/rego_1/w_0_n18#" 3990
+cap "smlogic_0/nextSB1" "smlogic_0/rego_1/w_0_n18#" 2880
+cap "smlogic_0/m1_347_169#" "smlogic_0/m1_348_25#" 1800
+cap "smlogic_0/sign" "smlogic_0/m1_348_25#" 114
+cap "smlogic_0/sign" "smlogic_0/Vdd" 786
+cap "smlogic_0/sign" "smlogic_0/nextSB0" 240
+cap "smlogic_0/m1_347_169#" "and_0/B" 480
+cap "smlogic_0/m1_347_169#" "and_0/A" 480
+cap "and_0/B" "smlogic_0/m1_348_25#" 152
+cap "smlogic_0/Vdd" "and_0/B" 786
+cap "and_0/A" "smlogic_0/m1_348_25#" 152
+cap "smlogic_0/Vdd" "and_0/A" 698
+cap "and_0/Gnd" "smlogic_0/sign" 663
+cap "smlogic_0/m1_347_169#" "smlogic_0/sign" 480
+cap "rego_4/w_0_157#" "m2_995_1126#" 3648
+cap "m2_995_1126#" "rego_4/w_0_95#" 1440
+cap "m2_995_1126#" "rego_4/w_0_95#" 3534
+cap "rego_4/w_0_157#" "m2_995_1126#" 4050
+cap "rego_1/w_0_95#" "a_1127_1493#" 4320
+cap "a_1127_1493#" "rego_1/w_0_157#" 4050
+cap "rego_1/w_0_157#" "a_1127_1493#" 3648
+cap "rego_1/w_0_95#" "a_1127_1493#" 3534
+cap "rego_1/w_0_95#" "m2_1229_1542#" 7854
+cap "rego_1/w_0_157#" "m2_1229_1542#" 7698
+cap "rego_0/w_0_95#" "m1_1424_1372#" 4320
+cap "rego_0/w_0_95#" "m1_1424_1372#" 3635
+cap "rego_0/w_0_95#" "rego_0/w_0_95#" -752
+cap "rego_0/w_0_157#" "rego_0/w_0_157#" -705
+cap "rego_0/w_0_157#" "m1_1424_1372#" 3648
+cap "rego_0/w_0_157#" "m1_1424_1372#" 4050
+cap "smlogic_0/rego_1/w_0_157#" "smlogic_0/rego_1/w_0_95#" 4123
+cap "smlogic_0/rego_1/w_0_157#" "smlogic_0/rego_1/w_0_95#" 5040
+cap "smlogic_0/rego_1/w_0_157#" "smlogic_0/rego_1/w_0_157#" 4256
+cap "smlogic_0/nextSB0" "smlogic_0/rego_1/w_0_157#" 2700
+cap "smlogic_0/nextSB0" "smlogic_0/rego_1/w_0_95#" 3285
+cap "and_0/A" "and_0/Vdd" 708
+cap "and_0/Vdd" "sign" 1329
+cap "m1_1655_1390#" "smlogic_0/nextSB1" 4500
+cap "smlogic_0/nextSB1" "and_0/Vdd" 2700
+cap "and_0/Vdd" "and_0/B" 708
+cap "and_0/Gnd" "sign" 156
+cap "sign" "and_0/AandB" 120
+cap "rego_2/w_0_240#" "rego_4/a_24_218#" 7344
+cap "rego_2/a_24_218#" "rego_4/w_0_157#" 3306
+cap "rego_2/w_0_240#" "rego_2/a_24_218#" 3841
+cap "rego_2/a_24_218#" "rego_4/w_0_157#" 270
+cap "rego_2/w_0_240#" "REGOUT" 6084
+cap "a_1127_1493#" "rego_3/w_0_240#" 6562
+cap "rego_1/a_24_218#" "rego_3/w_0_240#" 8100
+cap "a_1127_1493#" "rego_1/w_0_157#" 3306
+cap "a_1127_1493#" "rego_1/w_0_157#" 270
+cap "rego_1/w_0_157#" "m2_1229_1542#" 270
+cap "rego_1/w_0_157#" "rego_1/w_0_157#" 4888
+cap "rego_5/w_0_240#" "m2_1229_1542#" 22332
+cap "rego_1/w_0_157#" "m2_1229_1542#" 3306
+cap "rego_0/INCLKn" "m1_1424_1372#" 12420
+cap "rego_0/w_0_157#" "rego_0/w_0_157#" -47
+cap "rego_0/w_0_157#" "m1_1424_1372#" 342
+cap "rego_6/w_0_240#" "smlogic_0/rego_0/a_24_218#" 2160
+cap "rego_0/w_0_157#" "m1_1424_1372#" 270
+cap "rego_6/w_0_240#" "m1_1424_1372#" 9210
+cap "smlogic_0/nextSB1" "rego_7/w_0_240#" 13500
+cap "smlogic_0/rego_1/a_24_218#" "smlogic_0/rego_1/w_0_157#" 180
+cap "smlogic_0/nextSB1" "rego_8/w_0_240#" 12015
+cap "smlogic_0/nextSB1" "m1_1640_1316#" 14535
+cap "rego_3/a_24_218#" "rego_2/w_0_157#" 10818
+cap "rego_3/a_24_218#" "rego_2/w_0_240#" 228
+cap "rego_3/w_0_240#" "rego_5/a_24_218#" 228
+cap "rego_5/a_24_218#" "rego_3/w_0_157#" 10818
+cap "rego_6/a_24_218#" "rego_5/w_0_240#" 228
+cap "rego_6/a_24_218#" "rego_5/w_0_157#" 10818
+cap "rego_6/INCLKn" "m1_1424_1372#" 12420
+cap "m1_1424_1372#" "rego_6/w_0_240#" 798
+cap "rego_6/w_0_157#" "m1_1424_1372#" 7854
+cap "rego_6/w_0_240#" "rego_7/a_24_218#" 228
+cap "rego_6/w_0_157#" "rego_7/a_24_218#" 10818
+cap "rego_7/w_0_157#" "rego_8/a_24_218#" 10818
+cap "rego_7/w_0_240#" "rego_8/a_24_218#" 228
+cap "rego_2/w_0_157#" "m2_1056_1984#" 456
+cap "rego_2/w_0_95#" "m2_1056_1984#" 4332
+cap "rego_2/w_0_n18#" "m2_1056_1984#" 2964
+cap "m2_1056_1984#" "rego_2/w_0_95#" 4320
+cap "rego_3/INCLK" "m2_1056_1984#" 2700
+cap "m2_1163_1984#" "rego_3/w_0_95#" 4332
+cap "m2_1163_1984#" "rego_3/w_0_n18#" 2964
+cap "m2_1163_1984#" "rego_3/w_0_157#" 456
+cap "m2_1163_1984#" "rego_3/w_0_95#" 4320
+cap "m2_1163_1984#" "rego_5/INCLK" 2700
+cap "rego_5/w_0_95#" "m2_1275_1984#" 4320
+cap "rego_6/INCLK" "m2_1275_1984#" 2700
+cap "rego_5/w_0_95#" "m2_1275_1984#" 4332
+cap "rego_5/w_0_157#" "m2_1275_1984#" 456
+cap "rego_5/w_0_n18#" "m2_1275_1984#" 2964
+cap "rego_6/w_0_95#" "m1_1414_1946#" 4320
+cap "rego_6/w_0_157#" "rego_6/CLK" 456
+cap "rego_6/w_0_n18#" "m1_1414_1946#" 2964
+cap "rego_6/w_0_95#" "rego_6/CLK" 6348
+cap "rego_6/w_0_157#" "m1_1414_1946#" 456
+cap "m1_1414_1946#" "rego_6/CLK" 2700
+cap "rego_6/w_0_95#" "m1_1414_1946#" 4332
+cap "rego_6/w_0_95#" "rego_6/CLK" 4320
+cap "m2_1496_1984#" "rego_7/w_0_95#" 4332
+cap "m2_1496_1984#" "rego_7/w_0_n18#" 2964
+cap "m2_1496_1984#" "rego_7/w_0_95#" 4320
+cap "m2_1496_1984#" "rego_7/w_0_157#" 456
+cap "m2_1496_1984#" "rego_8/INCLK" 2700
+cap "m2_1056_1984#" "rego_2/w_0_n18#" 7182
+cap "m2_1056_1984#" "rego_2/w_0_n106#" 1710
+cap "rego_2/w_0_n18#" "m2_1056_1984#" 4320
+cap "rego_3/w_0_n18#" "m2_1163_1984#" 7182
+cap "rego_3/w_0_n18#" "m2_1163_1984#" 4320
+cap "rego_3/w_0_n106#" "m2_1163_1984#" 1710
+cap "m2_1275_1984#" "rego_5/w_0_n106#" 1710
+cap "rego_5/w_0_n18#" "m2_1275_1984#" 7182
+cap "rego_5/w_0_n18#" "m2_1275_1984#" 4320
+cap "rego_6/w_0_n18#" "m1_1414_1946#" 4320
+cap "rego_6/w_0_n106#" "m1_1414_1946#" 1710
+cap "rego_6/w_0_n18#" "m1_1414_1946#" 7182
+cap "rego_7/w_0_n106#" "m2_1496_1984#" 1710
+cap "rego_7/w_0_n18#" "m2_1496_1984#" 4320
+cap "rego_7/w_0_n18#" "m2_1496_1984#" 7182
+cap "m2_1056_1984#" "rego_2/w_0_n106#" 4522
+cap "m2_1056_1984#" "rego_2/w_0_n160#" 3078
+cap "m2_1056_1984#" "rego_3/a_85_n38#" 3060
+cap "m2_1056_1984#" "rego_2/w_0_n106#" 4320
+cap "m2_1163_1984#" "rego_3/w_0_n106#" 4320
+cap "m2_1163_1984#" "rego_3/w_0_n160#" 3078
+cap "m2_1163_1984#" "rego_5/a_85_n38#" 3060
+cap "m2_1163_1984#" "rego_3/w_0_n106#" 4522
+cap "m2_1275_1984#" "rego_6/a_85_n38#" 3060
+cap "m2_1275_1984#" "rego_5/w_0_n106#" 4320
+cap "m2_1275_1984#" "rego_5/w_0_n106#" 4522
+cap "rego_5/w_0_n160#" "m2_1275_1984#" 3078
+cap "rego_7/a_85_n38#" "m1_1414_1946#" 3060
+cap "rego_6/w_0_n106#" "m1_1414_1946#" 4522
+cap "rego_6/w_0_n106#" "m1_1414_1946#" 4320
+cap "rego_6/w_0_n160#" "m1_1414_1946#" 3078
+cap "m2_1496_1984#" "rego_7/w_0_n160#" 3078
+cap "m2_1496_1984#" "rego_7/w_0_n106#" 4320
+cap "m2_1496_1984#" "rego_7/w_0_n106#" 4522
+cap "m2_1496_1984#" "rego_8/a_85_n38#" 3060
+cap "rego_2/REGOUT" "rego_2/w_0_n160#" 1890
+cap "rego_2/w_0_n160#" "m2_1056_1984#" 12990
+cap "rego_3/w_0_n160#" "rego_3/REGOUT" 14880
+cap "rego_5/w_0_n160#" "rego_5/REGOUT" 14880
+cap "rego_6/REGOUT" "rego_6/w_0_n160#" 9480
+cap "rego_7/w_0_n160#" "rego_7/REGOUT" 14880
+merge "datapathL_0[4]/rego_0/REGOUT" "remainder_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_4/RST" "a_1188_1237#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -36 0 0 0 0
+merge "rego_8/RST" "smlogic_0/m1_348_25#" -26784 0 0 0 0 0 0 0 0 0 0 0 0 -88 -54 -1898 -426 0 0
+merge "smlogic_0/m1_348_25#" "datapathS_0[7]/rego_0/RST"
+merge "datapathS_0[7]/rego_0/RST" "m1_1790_123#"
+merge "m1_1790_123#" "m1_1651_1889#"
+merge "m1_1651_1889#" "reset"
+merge "datapathS_0[7]/rego_0/REGOUT" "quotient_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_8/w_0_n160#" "rego_7/w_0_n160#" -156311 0 0 0 0 0 0 0 0 0 0 0 0 -2873 -470 -110 -48 0 -40
+merge "rego_7/w_0_n160#" "rego_6/w_0_n160#"
+merge "rego_6/w_0_n160#" "rego_5/w_0_n160#"
+merge "rego_5/w_0_n160#" "rego_3/w_0_n160#"
+merge "rego_3/w_0_n160#" "rego_2/w_0_n160#"
+merge "rego_2/w_0_n160#" "datapathL_0[0]/reg_0/w_n18_160#"
+merge "datapathL_0[0]/reg_0/w_n18_160#" "datapathL_0[0]/reg_0/w_n18_n56#"
+merge "datapathL_0[0]/reg_0/w_n18_n56#" "datapathL_0[0]/reg_0/w_n18_n201#"
+merge "datapathL_0[0]/reg_0/w_n18_n201#" "datapathL_0[0]/adder_0/w_0_49#"
+merge "datapathL_0[0]/adder_0/w_0_49#" "datapathL_0[0]/mux_0/w_n20_288#"
+merge "datapathL_0[0]/mux_0/w_n20_288#" "datapathL_0[0]/mux_0/Vdd"
+merge "datapathL_0[0]/mux_0/Vdd" "datapathL_0[0]/shifter_0/w_n35_30#"
+merge "datapathL_0[0]/shifter_0/w_n35_30#" "datapathL_0[0]/rego_0/w_0_157#"
+merge "datapathL_0[0]/rego_0/w_0_157#" "datapathL_0[0]/rego_0/w_0_n18#"
+merge "datapathL_0[0]/rego_0/w_0_n18#" "datapathL_0[0]/rego_0/w_0_n160#"
+merge "datapathL_0[0]/rego_0/w_0_n160#" "Vdd"
+merge "Vdd" "rego_8/w_0_n18#"
+merge "rego_8/w_0_n18#" "rego_7/w_0_n18#"
+merge "rego_7/w_0_n18#" "rego_6/w_0_n18#"
+merge "rego_6/w_0_n18#" "rego_5/w_0_n18#"
+merge "rego_5/w_0_n18#" "rego_3/w_0_n18#"
+merge "rego_3/w_0_n18#" "rego_2/w_0_n18#"
+merge "rego_2/w_0_n18#" "rego_8/w_0_157#"
+merge "rego_8/w_0_157#" "rego_7/w_0_157#"
+merge "rego_7/w_0_157#" "rego_6/w_0_157#"
+merge "rego_6/w_0_157#" "rego_5/w_0_157#"
+merge "rego_5/w_0_157#" "rego_3/w_0_157#"
+merge "rego_3/w_0_157#" "rego_2/w_0_157#"
+merge "rego_2/w_0_157#" "and_0/Vdd"
+merge "and_0/Vdd" "smlogic_0/rego_1/w_0_157#"
+merge "smlogic_0/rego_1/w_0_157#" "smlogic_0/Vdd"
+merge "smlogic_0/Vdd" "w_1711_1071#"
+merge "w_1711_1071#" "a_1737_1075#"
+merge "a_1737_1075#" "a_1755_1075#"
+merge "a_1755_1075#" "smlogic_0/rego_1/w_0_n18#"
+merge "smlogic_0/rego_1/w_0_n18#" "m1_1640_1316#"
+merge "rego_6/REGOUT" "rego_7/a_24_218#" -47310 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1236 -436 0 0
+merge "rego_7/a_24_218#" "m1_1414_1946#"
+merge "smlogic_0/SB0" "and_0/A" -1264 0 0 0 0 -4 -8 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_0/A" "a_1730_1328#"
+merge "a_1730_1328#" "SB0"
+merge "datapathS_0[0]/rego_0/w_0_95#" "datapathL_0[7]/rego_0/w_0_95#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "datapathS_0[0]/mux_0/GND" "datapathL_0[7]/mux_0/GND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "rego_5/REGOUT" "rego_6/a_24_218#" -50502 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1848 -640 0 0
+merge "rego_6/a_24_218#" "m2_1275_1984#"
+merge "rego_8/w_0_n106#" "rego_7/w_0_n106#" -72098 -60 -32 0 0 0 0 0 0 0 0 0 0 -1886 -5670 0 0 0 0
+merge "rego_7/w_0_n106#" "rego_6/w_0_n106#"
+merge "rego_6/w_0_n106#" "rego_5/w_0_n106#"
+merge "rego_5/w_0_n106#" "rego_3/w_0_n106#"
+merge "rego_3/w_0_n106#" "rego_2/w_0_n106#"
+merge "rego_2/w_0_n106#" "datapathL_0[7]/reg_0/w_n18_242#"
+merge "datapathL_0[7]/reg_0/w_n18_242#" "rego_8/w_0_95#"
+merge "rego_8/w_0_95#" "rego_7/w_0_95#"
+merge "rego_7/w_0_95#" "rego_6/w_0_95#"
+merge "rego_6/w_0_95#" "rego_5/w_0_95#"
+merge "rego_5/w_0_95#" "rego_3/w_0_95#"
+merge "rego_3/w_0_95#" "rego_2/w_0_95#"
+merge "rego_2/w_0_95#" "datapathL_0[7]/reg_0/w_n18_81#"
+merge "datapathL_0[7]/reg_0/w_n18_81#" "smlogic_0/rego_1/w_0_240#"
+merge "smlogic_0/rego_1/w_0_240#" "rego_8/w_0_240#"
+merge "rego_8/w_0_240#" "smlogic_0/rego_0/w_0_240#"
+merge "smlogic_0/rego_0/w_0_240#" "rego_7/w_0_240#"
+merge "rego_7/w_0_240#" "rego_0/w_0_240#"
+merge "rego_0/w_0_240#" "rego_6/w_0_240#"
+merge "rego_6/w_0_240#" "rego_1/w_0_240#"
+merge "rego_1/w_0_240#" "rego_5/w_0_240#"
+merge "rego_5/w_0_240#" "rego_3/w_0_240#"
+merge "rego_3/w_0_240#" "rego_4/w_0_240#"
+merge "rego_4/w_0_240#" "rego_2/w_0_240#"
+merge "rego_2/w_0_240#" "smlogic_0/m1_128_197#"
+merge "smlogic_0/m1_128_197#" "smlogic_0/w_123_177#"
+merge "smlogic_0/w_123_177#" "rego_0/w_0_95#"
+merge "rego_0/w_0_95#" "rego_1/w_0_95#"
+merge "rego_1/w_0_95#" "rego_4/w_0_95#"
+merge "rego_4/w_0_95#" "w_1103_1370#"
+merge "w_1103_1370#" "w_1425_1370#"
+merge "w_1425_1370#" "datapathL_0[7]/reg_0/w_n18_n150#"
+merge "datapathL_0[7]/reg_0/w_n18_n150#" "smlogic_0/m1_128_n4#"
+merge "smlogic_0/m1_128_n4#" "smlogic_0/w_123_n24#"
+merge "smlogic_0/w_123_n24#" "rego_0/w_0_n106#"
+merge "rego_0/w_0_n106#" "rego_1/w_0_n106#"
+merge "rego_1/w_0_n106#" "rego_4/w_0_n106#"
+merge "rego_4/w_0_n106#" "w_1103_1169#"
+merge "w_1103_1169#" "datapathL_0[7]/adder_0/w_0_191#"
+merge "datapathL_0[7]/adder_0/w_0_191#" "w_902_1185#"
+merge "w_902_1185#" "datapathS_0[7]/mux_0/w_n20_399#"
+merge "datapathS_0[7]/mux_0/w_n20_399#" "datapathS_0[6]/mux_0/w_n20_399#"
+merge "datapathS_0[6]/mux_0/w_n20_399#" "w_1727_986#"
+merge "w_1727_986#" "datapathS_0[5]/mux_0/w_n20_399#"
+merge "datapathS_0[5]/mux_0/w_n20_399#" "datapathS_0[4]/mux_0/w_n20_399#"
+merge "datapathS_0[4]/mux_0/w_n20_399#" "datapathS_0[3]/mux_0/w_n20_399#"
+merge "datapathS_0[3]/mux_0/w_n20_399#" "datapathS_0[2]/mux_0/w_n20_399#"
+merge "datapathS_0[2]/mux_0/w_n20_399#" "datapathS_0[1]/mux_0/w_n20_399#"
+merge "datapathS_0[1]/mux_0/w_n20_399#" "datapathS_0[0]/mux_0/w_n20_399#"
+merge "datapathS_0[0]/mux_0/w_n20_399#" "datapathL_0[7]/mux_0/w_n20_399#"
+merge "datapathL_0[7]/mux_0/w_n20_399#" "datapathL_0[7]/adder_0/w_0_0#"
+merge "datapathL_0[7]/adder_0/w_0_0#" "datapathS_0[7]/mux_0/w_n20_187#"
+merge "datapathS_0[7]/mux_0/w_n20_187#" "datapathS_0[7]/mux_0/GND"
+merge "datapathS_0[7]/mux_0/GND" "datapathS_0[7]/rego_0/w_0_240#"
+merge "datapathS_0[7]/rego_0/w_0_240#" "datapathS_0[7]/rego_0/w_0_95#"
+merge "datapathS_0[7]/rego_0/w_0_95#" "datapathS_0[7]/rego_0/w_0_n106#"
+merge "datapathS_0[7]/rego_0/w_0_n106#" "GND"
+merge "smlogic_0/SB1" "and_0/B" -1264 0 0 0 0 -4 -8 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_0/B" "a_1740_1329#"
+merge "a_1740_1329#" "SB1"
+merge "rego_7/INCLK" "rego_6/CLK" -44032 0 0 0 0 0 0 0 0 0 0 0 0 -66 -78 -1800 -600 0 0
+merge "rego_6/CLK" "rego_0/CLK"
+merge "rego_0/CLK" "m1_1424_1372#"
+merge "rego_8/INCLK" "rego_7/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathS_0[0]/rego_0/w_0_n18#" "datapathL_0[7]/rego_0/w_0_n18#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 -214
+merge "datapathL_0[5]/reg_0/REGIN" "divisorin_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "datapathS_0[5]/mux_0/DIVIN" "dividendin_2" -5662 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1516 -712 0 0
+merge "datapathL_0[6]/rego_0/REGOUT" "remainder_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "datapathL_0[7]/adder_0/AddIn" "smlogic_0/add" -1316 0 0 0 0 0 0 0 0 0 0 0 0 -28 -30 0 0 0 0
+merge "smlogic_0/add" "a_912_1156#"
+merge "datapathS_0[0]/rego_0/REGOUT" "quotient_7" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_0/a_85_n38#" "rego_1/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "smlogic_0/shift" "datapathS_0[7]/shifter_0/ShiftIn" -48244 0 0 0 0 0 0 0 0 0 0 0 0 -1020 -530 -172 -94 0 0
+merge "datapathS_0[7]/shifter_0/ShiftIn" "m1_1779_1314#"
+merge "datapathL_0[7]/reg_0/CLKLD" "a_1729_1055#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "smlogic_0/m1_128_123#" "smlogic_0/w_123_64#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -130 0 0 -642 -868
+merge "smlogic_0/w_123_64#" "rego_0/w_0_n18#"
+merge "rego_0/w_0_n18#" "rego_1/w_0_n18#"
+merge "rego_1/w_0_n18#" "rego_4/w_0_n18#"
+merge "rego_4/w_0_n18#" "w_1103_1257#"
+merge "datapathL_0[7]/reg_0/CLK" "smlogic_0/m1_347_169#" -98711 0 0 0 0 0 -16 0 0 0 0 0 0 -2073 -566 0 0 0 0
+merge "smlogic_0/m1_347_169#" "datapathS_0[7]/rego_0/CLK"
+merge "datapathS_0[7]/rego_0/CLK" "a_1750_1097#"
+merge "a_1750_1097#" "m1_1671_1363#"
+merge "m1_1671_1363#" "clk"
+merge "rego_1/a_24_218#" "rego_0/REGOUT" -55632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2688 -920 0 0
+merge "rego_0/REGOUT" "m2_1229_1542#"
+merge "rego_1/REGOUT" "a_1127_1493#" -52858 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2568 -874 0 0
+merge "datapathL_0[2]/reg_0/REGIN" "divisorin_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "rego_2/a_24_218#" "rego_4/REGOUT" -49229 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1884 -652 0 0
+merge "rego_4/REGOUT" "m2_995_1126#"
+merge "rego_1/INCLK" "CLK" -3384 0 0 0 0 0 0 0 0 0 0 0 0 -120 -64 0 0 0 0
+merge "datapathS_0[2]/mux_0/DIVIN" "dividendin_5" -30324 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1962 -996 0 0
+merge "rego_0/a_24_218#" "smlogic_0/m1_128_271#" -6392 0 0 0 0 0 0 0 0 0 0 0 0 -48 -110 0 0 -462 -440
+merge "smlogic_0/m1_128_271#" "smlogic_0/w_123_239#"
+merge "smlogic_0/w_123_239#" "rego_0/w_0_157#"
+merge "rego_0/w_0_157#" "rego_1/w_0_157#"
+merge "rego_1/w_0_157#" "rego_4/w_0_157#"
+merge "rego_4/w_0_157#" "w_1103_1432#"
+merge "w_1103_1432#" "m1_1336_1477#"
+merge "datapathL_0[5]/rego_0/REGOUT" "remainder_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_4/CLK" "INCLK" -14276 0 0 0 0 -370 -200 0 0 0 0 0 0 -158 -102 -570 -124 0 0
+merge "rego_5/INCLK" "rego_3/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rego_3/REGOUT" "rego_5/a_24_218#" -50160 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1830 -634 0 0
+merge "rego_5/a_24_218#" "m2_1163_1984#"
+merge "rego_2/REGOUT" "rego_3/a_24_218#" -50388 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2148 -740 0 0
+merge "rego_3/a_24_218#" "m2_1056_1984#"
+merge "rego_4/a_24_218#" "REGOUT" -684 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -708 -248 0 0
+merge "datapathL_0[7]/adder_0/Cin" "a_906_1158#" -2444 -50 -30 0 0 0 0 0 0 0 0 0 0 -112 -68 0 0 0 0
+merge "datapathS_0[0]/rego_0/w_0_n160#" "datapathL_0[7]/rego_0/w_0_n160#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 -96
+merge "datapathS_0[2]/rego_0/REGOUT" "quotient_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_2/INCLK" "m1_989_1743#" -7520 0 0 0 0 0 0 0 0 0 0 0 0 -200 -80 -100 -40 0 0
+merge "datapathL_0[7]/reg_0/RST" "rego_4/a_85_n38#" -2632 0 0 0 0 0 0 0 0 0 0 0 0 -64 -64 0 0 0 0
+merge "rego_4/a_85_n38#" "m1_910_1446#"
+merge "datapathL_0[3]/rego_0/REGOUT" "remainder_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_7/REGOUT" "rego_8/a_24_218#" -50388 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1842 -644 0 0
+merge "rego_8/a_24_218#" "m2_1496_1984#"
+merge "datapathS_0[0]/rego_0/w_0_n106#" "datapathL_0[7]/rego_0/w_0_n106#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "datapathL_0[2]/rego_0/REGOUT" "remainder_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_6/a_85_n38#" "rego_5/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "rego_8/REGOUT" "valid" -3458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -182 -54 0 0
+merge "rego_8/CLK" "and_0/AandB" -1598 0 0 0 0 0 0 0 0 0 0 0 0 -30 -34 -678 -196 0 0
+merge "and_0/AandB" "m1_1651_1743#"
+merge "rego_1/a_85_n38#" "RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "smlogic_0/sel0" "datapathS_0[7]/mux_0/S0" -30800 0 0 0 0 0 -16 0 0 0 0 0 0 -620 -314 -176 -104 0 0
+merge "datapathS_0[7]/mux_0/S0" "a_1790_745#"
+merge "smlogic_0/inbit" "datapathS_0[7]/shifter_0/a_10_13#" -10720 0 0 0 0 0 0 0 0 0 0 0 0 -220 -114 -176 -112 0 0
+merge "datapathS_0[7]/shifter_0/a_10_13#" "INBIT"
+merge "rego_3/a_85_n38#" "rego_2/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "datapathL_0[1]/rego_0/REGOUT" "remainder_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "smlogic_0/load" "a_1763_1053#" -752 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0 0 0
+merge "rego_5/a_85_n38#" "rego_3/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "smlogic_0/sel1" "datapathS_0[7]/mux_0/S1" -29444 0 0 0 0 0 0 0 0 0 0 0 0 -620 -334 -172 -94 0 0
+merge "datapathS_0[7]/mux_0/S1" "m1_1779_1260#"
+merge "datapathL_0[0]/rego_0/REGOUT" "remainder_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_7/a_85_n38#" "rego_6/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "datapathS_0[4]/rego_0/REGOUT" "quotient_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "rego_8/a_85_n38#" "rego_7/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "smlogic_0/w_123_n78#" "rego_0/w_0_n160#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -130 0 0 -288 -396
+merge "rego_0/w_0_n160#" "rego_1/w_0_n160#"
+merge "rego_1/w_0_n160#" "rego_4/w_0_n160#"
+merge "rego_4/w_0_n160#" "w_1103_1115#"
+merge "rego_0/INCLK" "rego_1/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathL_0[6]/reg_0/REGIN" "divisorin_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "datapathS_0[0]/shifter_0/ShiftOut" "datapathL_0[7]/shifter_0/ShiftIn" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "datapathS_0[6]/mux_0/DIVIN" "dividendin_1" -9310 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1028 -476 0 0
+merge "datapathS_0[0]/shifter_0/w_n35_3#" "datapathL_0[7]/shifter_0/w_n35_3#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathS_0[0]/mux_0/w_n20_187#" "datapathL_0[7]/mux_0/w_n20_187#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "datapathS_0[0]/mux_0/w_n20_288#" "datapathL_0[7]/mux_0/w_n20_288#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30 0 0 0 -206
+merge "datapathS_0[0]/rego_0/w_0_157#" "datapathL_0[7]/rego_0/w_0_157#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 -154
+merge "datapathS_0[7]/mux_0/DIVIN" "dividendin_0" -3458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -544 -242 0 0
+merge "datapathS_0[6]/rego_0/REGOUT" "quotient_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "datapathS_0[0]/rego_0/w_0_240#" "datapathL_0[7]/rego_0/w_0_240#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "datapathL_0[3]/reg_0/REGIN" "divisorin_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "datapathS_0[3]/mux_0/DIVIN" "dividendin_4" -31540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1962 -996 0 0
+merge "smlogic_0/sign" "datapathL_0[0]/adder_0/sum" -89030 0 0 0 0 -280 -242 0 0 0 0 0 0 -1042 -306 0 0 0 0
+merge "datapathL_0[0]/adder_0/sum" "sign"
+merge "rego_6/INCLK" "rego_5/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathS_0[0]/rego_0/a_85_n38#" "datapathL_0[7]/rego_0/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "datapathS_0[0]/shifter_0/w_n35_30#" "datapathL_0[7]/shifter_0/w_n35_30#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -22 0 0 0 -62
+merge "datapathS_0[4]/mux_0/DIVIN" "dividendin_3" -27550 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2004 -948 0 0
+merge "datapathL_0[0]/reg_0/REGIN" "datapathL_0[0]/reg_0/w_n18_242#" -564 0 0 0 0 0 0 0 0 0 0 0 0 -12 -16 0 -12 0 0
+merge "datapathL_0[0]/reg_0/w_n18_242#" "m1_43_1821#"
+merge "datapathS_0[0]/mux_0/DIVIN" "dividendin_7" -15124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1162 -596 0 0
+merge "datapathS_0[0]/mux_0/Vdd" "datapathL_0[7]/mux_0/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "datapathS_0[0]/mux_0/a_n20_198#" "datapathL_0[7]/mux_0/S0" -1280 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathS_0[1]/mux_0/DIVIN" "dividendin_6" -15124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1162 -596 0 0
+merge "rego_3/INCLK" "rego_2/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "smlogic_0/m1_129_25#" "rego_0/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "datapathL_0[7]/rego_0/REGOUT" "m1_851_11#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "datapathL_0[7]/adder_0/w_0_49#" "w_903_1121#" -470 0 0 0 0 0 0 0 0 0 0 0 0 -24 -22 0 0 -425 -144
+merge "w_903_1121#" "a_914_1158#"
+merge "datapathL_0[7]/reg_0/REGIN" "divisorin_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "datapathS_0[1]/rego_0/REGOUT" "quotient_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "smlogic_0/rego_1/w_0_95#" "and_0/Gnd" -16544 0 0 0 0 0 0 0 0 0 0 0 0 -356 -119 0 0 0 0
+merge "and_0/Gnd" "m1_1655_1390#"
+merge "datapathS_0[0]/mux_0/a_n10_273#" "datapathL_0[7]/mux_0/S1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "smlogic_0/start" "start" -5964 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -372 -198 0 0
+merge "datapathL_0[4]/reg_0/REGIN" "divisorin_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "datapathS_0[5]/rego_0/REGOUT" "quotient_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "datapathS_0[0]/shifter_0/m2_n35_39#" "datapathL_0[7]/shifter_0/a_10_13#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "datapathS_0[3]/rego_0/REGOUT" "quotient_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 0 0
+merge "datapathS_0[0]/rego_0/INCLK" "datapathL_0[7]/rego_0/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathL_0[1]/reg_0/REGIN" "divisorin_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "datapathL_0[1:7]/mux_0/w_n20_187#" "datapathL_0[0:6]/mux_0/w_n20_187#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathL_0[1:7]/mux_0/w_n20_288#" "datapathL_0[0:6]/mux_0/w_n20_288#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -30 -64 0 0 0 -206
+merge "datapathL_0[1:7]/shifter_0/w_n35_3#" "datapathL_0[0:6]/shifter_0/w_n35_3#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathL_0[1:7]/rego_0/w_0_n106#" "datapathL_0[0:6]/rego_0/w_0_n106#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathL_0[1:7]/mux_0/a_n20_198#" "datapathL_0[0:6]/mux_0/S0" -1280 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathS_0[1:7]/rego_0/w_0_157#" "datapathS_0[0:6]/rego_0/w_0_157#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -154
+merge "datapathL_0[1:7]/rego_0/w_0_n18#" "datapathL_0[0:6]/rego_0/w_0_n18#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -214
+merge "datapathL_0[1:7]/rego_0/a_85_n38#" "datapathL_0[0:6]/rego_0/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "datapathS_0[1:7]/rego_0/w_0_240#" "datapathS_0[0:6]/rego_0/w_0_240#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "datapathL_0[1:7]/shifter_0/ShiftOut" "datapathL_0[0:6]/shifter_0/ShiftIn" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "datapathS_0[1:7]/shifter_0/m2_n35_39#" "datapathS_0[0:6]/shifter_0/a_10_13#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "datapathL_0[1:7]/adder_0/w_0_0#" "datapathL_0[0:6]/adder_0/w_0_0#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -52 0 0 0 0
+merge "datapathS_0[1:7]/mux_0/GND" "datapathS_0[0:6]/mux_0/GND" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -36 0 0 0 0
+merge "datapathL_0[1:7]/mux_0/a_n10_273#" "datapathL_0[0:6]/mux_0/S1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "datapathS_0[1:7]/shifter_0/w_n35_3#" "datapathS_0[0:6]/shifter_0/w_n35_3#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathS_0[1:7]/shifter_0/ShiftOut" "datapathS_0[0:6]/shifter_0/ShiftIn" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "datapathL_0[1:7]/rego_0/w_0_95#" "datapathL_0[0:6]/rego_0/w_0_95#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathS_0[1:7]/mux_0/w_n20_399#" "datapathS_0[0:6]/mux_0/w_n20_399#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -36 0 0 0 0
+merge "datapathL_0[1:7]/reg_0/w_n18_242#" "datapathL_0[0:6]/reg_0/w_n18_242#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathS_0[1:7]/rego_0/w_0_n160#" "datapathS_0[0:6]/rego_0/w_0_n160#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -96
+merge "datapathL_0[1:7]/adder_0/AddOut" "datapathL_0[0:6]/adder_0/AddIn" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "datapathL_0[1:7]/mux_0/Vdd" "datapathL_0[0:6]/mux_0/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -246
+merge "datapathL_0[1:7]/rego_0/INCLK" "datapathL_0[0:6]/rego_0/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 0 0 0 0
+merge "datapathS_0[1:7]/rego_0/w_0_n106#" "datapathS_0[0:6]/rego_0/w_0_n106#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathS_0[1:7]/shifter_0/w_n35_30#" "datapathS_0[0:6]/shifter_0/w_n35_30#" -658 0 0 0 0 0 0 0 0 0 0 0 0 -22 -48 0 0 0 -62
+merge "datapathL_0[1:7]/rego_0/w_0_157#" "datapathL_0[0:6]/rego_0/w_0_157#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -154
+merge "datapathS_0[1:7]/rego_0/w_0_95#" "datapathS_0[0:6]/rego_0/w_0_95#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathL_0[1:7]/mux_0/GND" "datapathL_0[0:6]/mux_0/GND" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -36 0 0 0 0
+merge "datapathL_0[1:7]/rego_0/w_0_240#" "datapathL_0[0:6]/rego_0/w_0_240#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "datapathL_0[1:7]/adder_0/w_0_49#" "datapathL_0[0:6]/adder_0/w_0_49#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -36 0 0 0 -276
+merge "datapathL_0[1:7]/shifter_0/m2_n35_39#" "datapathL_0[0:6]/shifter_0/a_10_13#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "datapathS_0[1:7]/rego_0/a_85_n38#" "datapathS_0[0:6]/rego_0/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "datapathS_0[1:7]/mux_0/Vdd" "datapathS_0[0:6]/mux_0/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -246
+merge "datapathL_0[1:7]/shifter_0/w_n35_30#" "datapathL_0[0:6]/shifter_0/w_n35_30#" -658 0 0 0 0 0 0 0 0 0 0 0 0 -22 -48 0 0 0 -62
+merge "datapathL_0[1:7]/adder_0/w_0_191#" "datapathL_0[1:7]/w_0_686#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -36 0 0 0 0
+merge "datapathL_0[1:7]/w_0_686#" "datapathL_0[0:6]/adder_0/w_0_191#"
+merge "datapathS_0[1:7]/mux_0/w_n20_187#" "datapathS_0[0:6]/mux_0/w_n20_187#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathS_0[1:7]/mux_0/w_n20_288#" "datapathS_0[0:6]/mux_0/w_n20_288#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -30 -64 0 0 0 -206
+merge "datapathS_0[1:7]/mux_0/a_n20_198#" "datapathS_0[0:6]/mux_0/S0" -1280 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathL_0[1:7]/reg_0/w_n18_160#" "datapathL_0[0:6]/reg_0/w_n18_160#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -144
+merge "datapathL_0[1:7]/reg_0/a_67_n79#" "datapathL_0[0:6]/reg_0/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
+merge "datapathL_0[1:7]/reg_0/w_n18_n150#" "datapathL_0[0:6]/reg_0/w_n18_n150#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathL_0[1:7]/reg_0/w_n18_81#" "datapathL_0[0:6]/reg_0/w_n18_81#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 0
+merge "datapathS_0[1:7]/mux_0/a_n10_273#" "datapathS_0[0:6]/mux_0/S1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "datapathL_0[1:7]/reg_0/INCLKCLD" "datapathL_0[0:6]/reg_0/CLKLD" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "datapathL_0[1:7]/reg_0/INCLK" "datapathL_0[0:6]/reg_0/CLK" -1280 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0 0 0
+merge "datapathL_0[1:7]/reg_0/w_n18_n201#" "datapathL_0[0:6]/reg_0/w_n18_n201#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -40 -84 0 0 0 -236
+merge "datapathS_0[1:7]/rego_0/w_0_n18#" "datapathS_0[0:6]/rego_0/w_0_n18#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -214
+merge "datapathL_0[1:7]/adder_0/Cout" "datapathL_0[0:6]/adder_0/Cin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0
+merge "datapathL_0[1:7]/rego_0/w_0_n160#" "datapathL_0[0:6]/rego_0/w_0_n160#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -96
+merge "datapathL_0[1:7]/reg_0/w_n18_n56#" "datapathL_0[0:6]/reg_0/w_n18_n56#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -68 0 0 0 -254
+merge "datapathS_0[1:7]/rego_0/INCLK" "datapathS_0[0:6]/rego_0/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 0 0 0 0

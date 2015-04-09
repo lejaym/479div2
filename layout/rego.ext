@@ -1,0 +1,104 @@
+timestamp 1428352843
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "REGOUT" 604 8322 33 -140 p 50 30 100 50 314 138 0 0 0 0 0 0 1006 182 468 98 0 0
+node "a_85_n38#" 293 0 85 -38 ndc 50 30 100 50 0 0 0 0 0 0 0 0 1283 356 0 0 0 0
+node "REGOUTn" 1736 11356 27 -48 ndiff 100 60 395 188 258 130 0 0 0 0 0 0 1545 390 910 202 0 0
+node "a_27_n55#" 804 5022 27 -55 ndc 100 60 200 100 0 0 0 0 0 0 0 0 1562 430 588 150 0 0
+node "RST" 810 2130 90 -60 p 0 0 0 0 514 272 0 0 0 0 0 0 80 36 0 0 0 0
+node "a_65_n11#" 1432 4704 65 -11 p 50 30 100 50 803 400 0 0 0 0 0 0 390 112 0 0 0 0
+node "CLK" 374 7656 82 61 p 0 0 0 0 334 154 0 0 0 0 0 0 136 52 0 0 0 0
+node "REGMEM" 1094 15132 24 136 ndiff 100 60 200 100 384 148 0 0 0 0 0 0 1549 296 1480 406 0 0
+node "INCLKn" 2025 14992 22 223 p 50 30 100 50 1014 550 0 0 0 0 0 0 1556 410 2685 532 0 0
+node "a_67_218#" 803 5814 67 218 pdc 100 60 200 100 0 0 0 0 0 0 0 0 1263 320 979 200 0 0
+node "a_11_148#" 1144 22392 11 148 p 100 60 200 100 258 130 0 0 0 0 0 0 1405 252 1001 204 0 0
+node "INCLK" 1594 16824 15 -42 p 50 30 100 50 1070 492 0 0 0 0 0 0 1196 298 2341 514 0 0
+node "a_24_218#" 292 2256 24 218 pdc 50 30 100 50 0 0 0 0 0 0 0 0 456 166 252 96 0 0
+node "w_0_n160#" 6651 0 0 -160 nw 252 114 200 100 0 0 0 0 0 0 0 0 2176 356 0 0 5280 316
+node "w_0_n106#" 1069 0 0 -106 pw 200 120 252 114 0 0 0 0 0 0 0 0 2152 392 0 0 0 0
+node "w_0_n18#" 4813 0 0 -18 nw 231 108 595 288 0 0 0 0 0 0 0 0 2560 548 0 0 11770 434
+node "w_0_95#" 1069 0 0 95 pw 200 120 252 114 0 0 0 0 0 0 0 0 2224 368 0 0 0 0
+node "w_0_157#" 4488 0 0 157 nw 252 114 200 100 0 0 0 0 0 0 0 0 2160 352 0 0 8470 374
+node "w_0_240#" 643 0 0 240 pw 0 0 252 114 0 0 0 0 0 0 0 0 1760 252 0 0 0 0
+cap "a_85_n38#" "w_0_n18#" 4512
+cap "REGOUTn" "INCLKn" 21723
+cap "a_85_n38#" "w_0_n106#" 44180
+cap "INCLK" "a_11_148#" 10350
+cap "CLK" "w_0_n18#" 6300
+cap "INCLK" "w_0_240#" 18584
+cap "a_11_148#" "w_0_240#" 12925
+cap "INCLK" "a_27_n55#" 3818
+cap "REGOUTn" "a_85_n38#" 12690
+cap "a_67_218#" "INCLKn" 3390
+cap "REGMEM" "w_0_n18#" 20577
+cap "w_0_n106#" "REGMEM" 1645
+cap "w_0_95#" "a_67_218#" 10810
+cap "RST" "w_0_n18#" 16517
+cap "RST" "w_0_n106#" 19003
+cap "w_0_95#" "INCLKn" 31855
+cap "a_65_n11#" "w_0_n18#" 32726
+cap "w_0_n106#" "a_65_n11#" 17240
+cap "w_0_95#" "CLK" 6300
+cap "REGMEM" "INCLKn" 3078
+cap "INCLK" "w_0_n18#" 61511
+cap "w_0_95#" "REGMEM" 29697
+cap "REGOUT" "w_0_n160#" 38950
+cap "REGOUT" "w_0_n106#" 18708
+cap "INCLK" "w_0_n106#" 12482
+cap "w_0_157#" "a_67_218#" 37001
+cap "a_27_n55#" "w_0_n18#" 10810
+cap "a_27_n55#" "w_0_n160#" 19402
+cap "a_27_n55#" "w_0_n106#" 29909
+cap "REGOUT" "REGOUTn" 4500
+cap "w_0_157#" "INCLKn" 50434
+cap "a_85_n38#" "a_65_n11#" 3810
+cap "INCLK" "a_67_218#" 76
+cap "a_11_148#" "a_67_218#" 1304
+cap "a_67_218#" "w_0_240#" 5499
+cap "INCLK" "INCLKn" 2033
+cap "w_0_157#" "a_24_218#" 6580
+cap "INCLKn" "w_0_240#" 9946
+cap "w_0_95#" "INCLK" 22802
+cap "w_0_157#" "REGMEM" 32045
+cap "w_0_95#" "a_11_148#" 4736
+cap "a_85_n38#" "a_27_n55#" 3240
+cap "a_11_148#" "a_24_218#" 2222
+cap "a_24_218#" "w_0_240#" 11420
+cap "INCLK" "REGMEM" 19068
+cap "a_11_148#" "REGMEM" 10014
+cap "REGOUTn" "w_0_n18#" 16356
+cap "REGOUTn" "w_0_n160#" 5864
+cap "REGOUTn" "w_0_n106#" 32107
+cap "a_27_n55#" "REGMEM" 1260
+cap "INCLK" "w_0_157#" 21135
+cap "a_11_148#" "w_0_157#" 30363
+cap "INCLKn" "w_0_n18#" 56505
+cap "w_0_n106#" "INCLKn" 9138
+device mosfet pfet 75 -138 76 -137 2 20 "w_0_n160#" "REGOUTn" 4 0 "REGOUT" 20 0 "w_0_n160#" 20 0
+device mosfet pfet 33 -138 34 -137 2 20 "w_0_n160#" "REGOUT" 4 0 "a_27_n55#" 20 0 "w_0_n160#" 20 0
+device mosfet nfet 75 -100 76 -99 2 10 "w_0_n106#" "REGOUTn" 4 0 "REGOUT" 10 0 "w_0_n106#" 10 0
+device mosfet nfet 33 -100 34 -99 2 10 "w_0_n106#" "REGOUT" 4 0 "a_27_n55#" 10 0 "w_0_n106#" 10 0
+device mosfet nfet 90 -58 91 -57 2 10 "w_0_n106#" "RST" 4 0 "a_65_n11#" 10 0 "w_0_n106#" 10 0
+device mosfet nfet 90 -38 91 -37 2 10 "w_0_n106#" "a_65_n11#" 4 0 "a_85_n38#" 10 0 "w_0_n106#" 10 0
+device mosfet nfet 27 -50 28 -49 2 10 "w_0_n106#" "INCLK" 4 0 "a_27_n55#" 10 0 "REGOUTn" 10 0
+device mosfet pfet 90 -12 91 -11 2 20 "w_0_n18#" "a_65_n11#" 4 0 "a_85_n38#" 20 0 "w_0_n18#" 20 0
+device mosfet nfet 27 -32 28 -31 2 10 "w_0_n106#" "INCLKn" 4 0 "REGOUTn" 10 0 "REGMEM" 10 0
+device mosfet pfet 90 17 91 18 2 20 "w_0_n18#" "RST" 4 0 "a_65_n11#" 20 0 "w_0_n18#" 20 0
+device mosfet pfet 65 -2 66 -1 2 39 "w_0_n18#" "a_65_n11#" 4 0 "REGOUTn" 39 0 "w_0_n18#" 39 0
+device mosfet pfet 27 -1 28 0 2 20 "w_0_n18#" "INCLK" 4 0 "REGMEM" 20 0 "REGOUTn" 20 0
+device mosfet pfet 27 17 28 18 2 20 "w_0_n18#" "INCLKn" 4 0 "REGOUTn" 20 0 "a_27_n55#" 20 0
+device mosfet pfet 82 63 83 64 2 20 "w_0_n18#" "CLK" 4 0 "INCLKn" 20 0 "w_0_n18#" 20 0
+device mosfet pfet 45 63 46 64 2 20 "w_0_n18#" "INCLKn" 4 0 "INCLK" 20 0 "w_0_n18#" 20 0
+device mosfet nfet 82 101 83 102 2 10 "w_0_95#" "CLK" 4 0 "INCLKn" 10 0 "w_0_95#" 10 0
+device mosfet nfet 45 101 46 102 2 10 "w_0_95#" "INCLKn" 4 0 "INCLK" 10 0 "w_0_95#" 10 0
+device mosfet nfet 74 136 75 137 2 10 "w_0_95#" "REGMEM" 4 0 "w_0_95#" 10 0 "a_67_218#" 10 0
+device mosfet nfet 22 136 23 137 2 10 "w_0_95#" "a_11_148#" 4 0 "w_0_95#" 10 0 "REGMEM" 10 0
+device mosfet pfet 74 164 75 165 2 20 "w_0_157#" "REGMEM" 4 0 "w_0_157#" 20 0 "a_67_218#" 20 0
+device mosfet pfet 22 164 23 165 2 20 "w_0_157#" "a_11_148#" 4 0 "w_0_157#" 20 0 "REGMEM" 20 0
+device mosfet pfet 67 223 68 224 2 20 "w_0_157#" "INCLK" 4 0 "a_67_218#" 20 0 "a_11_148#" 20 0
+device mosfet pfet 24 223 25 224 2 20 "w_0_157#" "INCLKn" 4 0 "a_24_218#" 20 0 "a_11_148#" 20 0
+device mosfet nfet 77 250 78 251 2 10 "w_0_240#" "INCLKn" 4 0 "a_11_148#" 10 0 "a_67_218#" 10 0
+device mosfet nfet 24 250 25 251 2 10 "w_0_240#" "INCLK" 4 0 "a_11_148#" 10 0 "a_24_218#" 10 0

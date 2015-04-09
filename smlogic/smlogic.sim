@@ -1,0 +1,268 @@
+| units: 100 tech: scmos format: MIT
+n rego_0/CLK rego_1/a_11_148# nextSB0 2 10 267 332
+n rego_1/INCLKn rego_1/a_11_148# rego_1/a_67_218# 2 10 320 332
+p rego_1/INCLKn nextSB0 rego_1/a_11_148# 2 20 267 305
+p rego_0/CLK rego_1/a_67_218# rego_1/a_11_148# 2 20 310 305
+p rego_1/a_11_148# Vdd rego_1/REGMEM 2 20 265 246
+p rego_1/REGMEM Vdd rego_1/a_67_218# 2 20 317 246
+n rego_1/a_11_148# Gnd rego_1/REGMEM 2 10 265 218
+n rego_1/REGMEM Gnd rego_1/a_67_218# 2 10 317 218
+n rego_1/INCLKn rego_0/CLK Gnd 2 10 288 183
+n clk rego_1/INCLKn Gnd 2 10 325 183
+p rego_1/INCLKn rego_0/CLK Vdd 2 20 288 145
+p clk rego_1/INCLKn Vdd 2 20 325 145
+p rego_1/INCLKn rego_1/REGOUTn rego_1/a_27_n55# 2 20 270 99
+p rego_0/CLK rego_1/REGMEM rego_1/REGOUTn 2 20 270 81
+p rego_1/a_65_n11# rego_1/REGOUTn Vdd 2 39 308 80
+p reset rego_1/a_65_n11# Vdd 2 20 333 99
+n rego_1/INCLKn rego_1/REGOUTn rego_1/REGMEM 2 10 270 50
+p rego_1/a_65_n11# rego_0/RST Vdd 2 20 333 70
+n rego_0/CLK rego_1/a_27_n55# rego_1/REGOUTn 2 10 270 32
+n rego_1/a_65_n11# rego_0/RST Gnd 2 10 333 44
+n reset rego_1/a_65_n11# Gnd 2 10 333 24
+n SB0 rego_1/a_27_n55# Gnd 2 10 276 -18
+n rego_1/REGOUTn SB0 Gnd 2 10 318 -18
+p SB0 rego_1/a_27_n55# Vdd 2 20 276 -56
+p rego_1/REGOUTn SB0 Vdd 2 20 318 -56
+n rego_0/INCLK rego_0/a_11_148# nextSB1 2 10 157 332
+n rego_0/INCLKn rego_0/a_11_148# rego_0/a_67_218# 2 10 210 332
+p rego_0/INCLKn nextSB1 rego_0/a_11_148# 2 20 157 305
+p rego_0/INCLK rego_0/a_67_218# rego_0/a_11_148# 2 20 200 305
+p rego_0/a_11_148# Vdd rego_0/REGMEM 2 20 155 246
+p rego_0/REGMEM Vdd rego_0/a_67_218# 2 20 207 246
+n rego_0/a_11_148# Gnd rego_0/REGMEM 2 10 155 218
+n rego_0/REGMEM Gnd rego_0/a_67_218# 2 10 207 218
+n rego_0/INCLKn rego_0/INCLK Gnd 2 10 178 183
+n rego_0/CLK rego_0/INCLKn Gnd 2 10 215 183
+p rego_0/INCLKn rego_0/INCLK Vdd 2 20 178 145
+p rego_0/CLK rego_0/INCLKn Vdd 2 20 215 145
+p rego_0/INCLKn rego_0/REGOUTn rego_0/a_27_n55# 2 20 160 99
+p rego_0/INCLK rego_0/REGMEM rego_0/REGOUTn 2 20 160 81
+p rego_0/a_65_n11# rego_0/REGOUTn Vdd 2 39 198 80
+p rego_0/RST rego_0/a_65_n11# Vdd 2 20 223 99
+n rego_0/INCLKn rego_0/REGOUTn rego_0/REGMEM 2 10 160 50
+p rego_0/a_65_n11# m1_129_25# Vdd 2 20 223 70
+n rego_0/INCLK rego_0/a_27_n55# rego_0/REGOUTn 2 10 160 32
+n rego_0/a_65_n11# m1_129_25# Gnd 2 10 223 44
+n rego_0/RST rego_0/a_65_n11# Gnd 2 10 223 24
+n SB1 rego_0/a_27_n55# Gnd 2 10 166 -18
+n rego_0/REGOUTn SB1 Gnd 2 10 208 -18
+p SB1 rego_0/a_27_n55# Vdd 2 20 166 -56
+p rego_0/REGOUTn SB1 Vdd 2 20 208 -56
+p sign a_400_98# Vdd 2 18 406 118
+p a_400_98# Vdd nextSB0 2 18 416 118
+p SB0 nextSB0 Vdd 2 18 426 118
+p SB1 Vdd nextSB0 2 18 436 118
+n sign a_400_98# Gnd 2 10 406 98
+n a_400_98# Gnd a_418_98# 2 10 416 98
+n SB0 a_418_98# a_428_98# 2 10 426 98
+n SB1 a_428_98# nextSB0 2 10 436 98
+n start nextSB0 Gnd 2 40 460 98
+n SB1 shift a_408_74# 2 10 406 74
+n SB0 a_408_74# Gnd 2 10 416 74
+n SB0 Gnd load 2 10 426 74
+n SB1 load Gnd 2 10 436 74
+n load sel0 Gnd 2 10 454 74
+n SB0 Gnd sel1 2 10 464 74
+p SB1 Vdd shift 2 20 406 44
+p SB0 shift Vdd 2 20 416 44
+p SB0 Vdd a_428_44# 2 20 426 44
+p SB1 a_428_44# load 2 20 436 44
+p load sel0 Vdd 2 20 454 44
+p SB0 Vdd sel1 2 20 464 44
+p SB1 Vdd a_400_n17# 2 20 398 3
+p a_400_n17# inbit a_418_3# 2 20 416 3
+p SB0 a_418_3# Vdd 2 20 426 3
+p SB1 Vdd a_438_3# 2 20 436 3
+p a_446_n19# a_438_3# add 2 20 446 3
+p SB0 a_446_n19# Vdd 2 20 464 3
+n SB1 Gnd a_400_n17# 2 10 398 -17
+n a_400_n17# Gnd inbit 2 10 416 -17
+n SB0 inbit Gnd 2 10 426 -17
+n SB1 Gnd add 2 10 436 -17
+n a_446_n19# add Gnd 2 10 446 -17
+n SB0 a_446_n19# Gnd 2 10 464 -17
+n sign Gnd a_418_n41# 2 10 416 -41
+n SB0 a_418_n41# a_428_n41# 2 10 426 -41
+n SB1 a_428_n41# nextSB1 2 10 436 -41
+p sign Vdd nextSB1 2 18 416 -69
+p SB0 nextSB1 Vdd 2 18 426 -69
+p SB1 Vdd nextSB1 2 18 436 -69
+n start nextSB1 Gnd 2 40 460 -71
+C rego_0/REGOUTn m1_129_25# 12.7
+C Vdd rego_1/a_11_148# 30.4
+C rego_0/RST rego_1/a_65_n11# 3.8
+C Gnd clk 6.3
+C Gnd SB1 33.8
+C Gnd start 12.4
+C nextSB0 rego_1/a_11_148# 2.2
+C rego_1/REGOUTn SB0 4.5
+C Vdd rego_0/a_11_148# 30.4
+C Vdd SB0 66.8
+C rego_0/a_11_148# nextSB1 2.2
+C Gnd rego_1/REGOUTn 32.1
+C Gnd rego_1/INCLKn 50.9
+C rego_0/REGOUTn SB1 4.5
+C Gnd Vdd 25.0
+C Gnd nextSB1 25.7
+C Gnd nextSB0 43.3
+C rego_0/INCLKn rego_0/a_67_218# 3.4
+C Vdd sign 15.0
+C rego_0/a_27_n55# rego_0/INCLK 3.8
+C Vdd rego_0/REGOUTn 22.2
+C Gnd rego_1/a_27_n55# 29.9
+C Gnd load 13.7
+C rego_1/INCLKn rego_1/REGMEM 3.1
+C rego_0/REGMEM rego_0/INCLK 19.1
+C Vdd rego_1/REGMEM 52.6
+C Gnd rego_1/a_11_148# 17.7
+C Gnd rego_0/a_11_148# 17.7
+C Gnd SB0 36.3
+C inbit nextSB1 3.6
+C rego_0/a_65_n11# m1_129_25# 3.8
+C rego_1/REGOUTn rego_0/RST 12.7
+C rego_1/REGMEM rego_1/a_11_148# 10.0
+C Vdd rego_0/INCLK 82.6
+C Vdd rego_0/RST 21.0
+C Gnd sign 14.0
+C Vdd a_400_98# 2.3
+C Gnd rego_0/REGOUTn 32.1
+C a_400_98# nextSB1 3.9
+C rego_0/RST rego_1/a_27_n55# 3.2
+C Gnd rego_1/REGMEM 31.3
+C rego_0/REGMEM rego_0/INCLKn 3.1
+C rego_1/INCLKn rego_1/a_67_218# 3.4
+C Vdd rego_0/a_67_218# 37.0
+C Gnd inbit 5.5
+C Vdd rego_1/a_67_218# 37.0
+C Vdd rego_0/a_65_n11# 32.7
+C rego_0/INCLK rego_0/a_11_148# 10.3
+C Vdd shift 3.2
+C shift nextSB1 2.7
+C nextSB0 shift 4.7
+C rego_0/a_27_n55# m1_129_25# 3.2
+C Gnd rego_0/INCLK 53.9
+C Gnd rego_0/RST 63.2
+C Vdd rego_0/INCLKn 106.9
+C rego_1/INCLKn rego_0/CLK 2.0
+C clk reset 30.1
+C Vdd rego_1/a_65_n11# 32.7
+C Gnd a_400_98# 2.5
+C Vdd rego_0/CLK 88.9
+C Vdd a_400_n17# 4.2
+C rego_1/a_27_n55# rego_0/CLK 3.8
+C Vdd reset 29.5
+C a_400_n17# nextSB1 5.6
+C Gnd rego_0/a_67_218# 16.3
+C Vdd a_446_n19# 4.2
+C Gnd rego_1/a_67_218# 16.3
+C nextSB0 reset 3.4
+C Gnd rego_0/a_65_n11# 17.2
+C rego_0/a_27_n55# Vdd 30.2
+C rego_0/CLK rego_1/a_11_148# 10.3
+C Gnd shift 8.3
+C Vdd m1_129_25# 4.5
+C Gnd rego_0/INCLKn 50.9
+C Vdd rego_0/REGMEM 52.6
+C Gnd rego_1/a_65_n11# 17.2
+C Gnd rego_0/CLK 60.2
+C Vdd clk 6.3
+C Vdd SB1 73.7
+C Vdd start 18.3
+C start nextSB1 2.7
+C rego_0/INCLKn rego_0/REGOUTn 21.7
+C rego_1/REGOUTn rego_1/INCLKn 21.7
+C Gnd a_400_n17# 3.7
+C Gnd reset 23.7
+C Vdd rego_1/REGOUTn 22.2
+C Vdd rego_1/INCLKn 106.9
+C Gnd a_446_n19# 3.7
+C Gnd rego_0/a_27_n55# 29.9
+C rego_0/CLK rego_1/REGMEM 19.1
+C Vdd nextSB1 18.1
+C Vdd nextSB0 12.0
+C rego_0/REGMEM rego_0/a_11_148# 10.0
+C Gnd m1_129_25# 45.7
+C Vdd rego_1/a_27_n55# 30.2
+C Vdd load 2.7
+C Gnd rego_0/REGMEM 31.3
+C load nextSB0 3.6
+C rego_0/INCLKn rego_0/INCLK 2.0
+R a_428_n41# 33
+R a_418_n41# 33
+C add GND 2.8
+R add 233
+R a_438_3# 149
+R a_418_3# 149
+R inbit 233
+C a_446_n19# GND 3.0
+R a_446_n19# 788
+C a_400_n17# GND 3.0
+R a_400_n17# 788
+R a_428_44# 149
+R sel1 243
+R sel0 244
+R a_408_74# 33
+C shift GND 2.3
+R shift 195
+C load GND 4.2
+R load 1116
+R a_428_98# 33
+R a_418_98# 33
+C a_400_98# GND 2.4
+R a_400_98# 724
+C sign GND 8.9
+R sign 1106
+C start GND 9.2
+R start 1505
+C SB1 GND 68.0
+R SB1 4472
+R m1_129_25# 293
+C rego_0/REGOUTn GND 11.4
+R rego_0/REGOUTn 1736
+C rego_0/a_27_n55# GND 5.0
+R rego_0/a_27_n55# 804
+C rego_0/a_65_n11# GND 4.7
+R rego_0/a_65_n11# 1432
+C rego_0/REGMEM GND 15.1
+R rego_0/REGMEM 1094
+C rego_0/INCLKn GND 15.0
+R rego_0/INCLKn 2025
+C rego_0/a_67_218# GND 5.8
+R rego_0/a_67_218# 803
+C rego_0/a_11_148# GND 22.4
+R rego_0/a_11_148# 1144
+C rego_0/INCLK GND 16.8
+R rego_0/INCLK 1594
+C nextSB1 GND 47.4
+R nextSB1 1232
+C SB0 GND 43.6
+R SB0 4831
+C rego_0/RST GND 2.1
+R rego_0/RST 1103
+C rego_1/REGOUTn GND 11.4
+R rego_1/REGOUTn 1736
+C rego_1/a_27_n55# GND 5.0
+R rego_1/a_27_n55# 804
+C reset GND 155.5
+R reset 813
+C rego_1/a_65_n11# GND 4.7
+R rego_1/a_65_n11# 1432
+C clk GND 183.9
+R clk 377
+C rego_1/REGMEM GND 15.1
+R rego_1/REGMEM 1094
+C rego_1/INCLKn GND 15.0
+R rego_1/INCLKn 2025
+C rego_1/a_67_218# GND 5.8
+R rego_1/a_67_218# 803
+C rego_1/a_11_148# GND 22.4
+R rego_1/a_11_148# 1144
+C rego_0/CLK GND 24.5
+R rego_0/CLK 2018
+C nextSB0 GND 38.3
+R nextSB0 1229
+C Vdd GND 173.3
+R Vdd 80852
+C Gnd GND 313.9
+R Gnd 8866
