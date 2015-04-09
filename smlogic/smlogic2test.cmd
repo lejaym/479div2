@@ -1,6 +1,5 @@
 stepsize 1000
 w SB0 SB1 sign start
-settle 50
 | Set up vectors
 h reset
 s

@@ -1,6 +1,10 @@
 stepsize 1000
-w SB0 SB1 sign start
+w SB0 SB1 sign start reset
 settle 50
+h reset
+s
+l reset
+s
 | Set up vectors
 
 vector divisorin divisorin_{6:0}

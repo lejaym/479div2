@@ -1,4 +1,4 @@
-timestamp 1428544184
+timestamp 1428620628
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
@@ -9,12 +9,18 @@ use rego rego_1 1 0 243 0 1 82
 node "m1_128_n78#" 0 0 128 -78 m1 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0
 node "m1_128_n4#" 0 0 128 -4 m1 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0
 node "m1_129_25#" 0 0 129 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 40 26 0 0 0 0
-node "m1_348_25#" 3 172323 348 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 3320 862 1792 464 0 0
+node "reset" 3 172323 348 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 3320 862 1792 464 0 0
 node "m1_128_123#" 0 0 128 123 m1 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0
-node "m1_347_169#" 3 179070 347 169 m1 0 0 0 0 0 0 0 0 0 0 0 0 3810 958 0 0 0 0
+node "clk" 3 179070 347 169 m1 0 0 0 0 0 0 0 0 0 0 0 0 3810 958 0 0 0 0
 node "m1_128_197#" 0 0 128 197 m1 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0
 node "m1_128_271#" 0 0 128 271 m1 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0
 node "m1_128_345#" 0 1974 128 345 m1 0 0 0 0 0 0 0 0 0 0 0 0 119 48 0 0 0 0
+node "a_264_n108#" 201 0 264 -108 pdiff 0 0 216 70 0 0 0 0 0 0 0 0 120 68 0 0 0 0
+node "a_244_n108#" 201 0 244 -108 pdiff 0 0 216 70 0 0 0 0 0 0 0 0 120 68 0 0 0 0
+node "a_339_n133#" 2566 5392 339 -133 ndc 90 42 162 66 386 384 0 0 0 0 0 0 260 138 0 0 0 0
+node "a_308_n85#" 1139 952 308 -85 pc 0 0 0 0 205 202 0 0 0 0 0 0 72 44 117 44 0 0
+node "a_236_n133#" 2566 5392 236 -133 ndc 90 42 162 66 386 384 0 0 0 0 0 0 260 138 0 0 0 0
+node "a_198_n85#" 1223 12859 198 -85 pc 0 0 0 0 219 216 0 0 0 0 0 0 72 44 104 42 0 0
 node "nextSB1" 756 45529 418 -69 pdiff 300 124 252 100 0 0 0 0 0 0 0 0 970 390 2360 1298 0 0
 equiv "nextSB1" "nextSB1"
 node "a_428_n41#" 33 0 428 -41 ndiff 80 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -35,97 +41,133 @@ node "a_428_98#" 33 0 428 98 ndiff 80 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_418_98#" 33 0 418 98 ndiff 80 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "nextSB0" 753 46964 418 118 pdiff 300 124 252 100 0 0 0 0 0 0 0 0 1090 406 1380 602 0 0
 equiv "nextSB0" "nextSB0"
-node "SB1" 4200 59941 398 -19 p 0 0 0 0 745 728 0 0 0 0 0 0 1100 574 316 156 0 0
-node "SB0" 4584 35777 416 42 p 0 0 0 0 792 784 0 0 0 0 0 0 612 330 349 168 0 0
+node "SB1" 4991 19837 254 -133 ndiff 210 88 378 136 745 728 0 0 0 0 0 0 636 350 784 408 0 0
+node "SB0" 5377 20630 357 -133 ndiff 210 88 378 136 792 784 0 0 0 0 0 0 736 392 232 124 0 0
 node "a_400_98#" 724 2360 400 98 ndc 60 32 108 48 96 94 0 0 0 0 0 0 204 110 0 0 0 0
 node "sign" 1106 8928 393 111 pc 0 0 0 0 255 222 0 0 0 0 0 0 132 82 632 324 0 0
 node "start" 1505 9179 447 -71 pc 0 0 0 0 260 260 0 0 0 0 0 0 72 52 1292 654 0 0
+node "w_226_n143#" 704 38597 226 -143 pw 480 184 120 58 0 0 0 0 0 0 0 0 1690 654 807 226 0 0
 node "w_123_n78#" 7517 0 123 -78 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 768 128
 node "w_123_n24#" 0 0 123 -24 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "Gnd" 2406 46456 385 -44 pw 1160 520 372 160 0 0 0 0 0 0 0 0 3024 970 984 262 0 0
-node "Vdd" 28131 68394 385 -78 nw 293 136 1380 528 0 0 0 0 0 0 0 0 3134 1256 1838 512 9840 688
+node "Vdd" 42346 56738 226 -111 nw 293 136 1812 668 0 0 0 0 0 0 0 0 3374 1376 1838 512 16511 1072
 node "w_123_64#" 16758 0 123 64 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1712 246
 node "w_123_177#" 0 0 123 177 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_123_239#" 12059 0 123 239 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1232 186
 node "w_125_322#" 0 0 125 322 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "shift" "nextSB1" 2695
-cap "shift" "Gnd" 8348
-cap "shift" "Vdd" 3216
-cap "a_418_n41#" "nextSB1" 264
-cap "a_418_3#" "SB0" 1206
-cap "m1_128_123#" "w_123_64#" 4512
-cap "shift" "SB1" 240
-cap "start" "nextSB0" 1968
-cap "a_438_3#" "SB0" 1072
-cap "sel0" "SB0" 114
-cap "m1_348_25#" "nextSB1" 1440
-cap "sign" "nextSB1" 95
-cap "Vdd" "m1_348_25#" 4320
-cap "sign" "Gnd" 13968
-cap "sign" "Vdd" 15041
-cap "w_123_239#" "m1_128_271#" 4512
-cap "w_125_322#" "m1_128_345#" 3619
-cap "a_400_98#" "nextSB1" 3908
 cap "SB0" "nextSB1" 240
-cap "a_400_98#" "Gnd" 2474
-cap "SB0" "Gnd" 17562
-cap "Vdd" "a_400_98#" 2286
-cap "Vdd" "SB0" 27855
-cap "m1_128_197#" "w_123_177#" 4512
-cap "m1_348_25#" "m1_347_169#" 30060
-cap "shift" "a_408_74#" 880
-cap "inbit" "a_428_n41#" 704
-cap "Gnd" "a_446_n19#" 3744
-cap "Vdd" "a_446_n19#" 4214
-cap "inbit" "a_400_n17#" 960
-cap "nextSB0" "nextSB1" 1935
-cap "nextSB0" "Gnd" 7802
-cap "Vdd" "nextSB0" 5420
-cap "add" "SB0" 1048
-cap "start" "nextSB1" 2688
-cap "start" "Gnd" 12352
-cap "start" "Vdd" 18269
-cap "inbit" "nextSB1" 3592
-cap "shift" "a_400_98#" 720
-cap "Gnd" "inbit" 5544
-cap "Vdd" "inbit" 564
-cap "nextSB0" "SB1" 240
-cap "load" "nextSB0" 3592
-cap "m1_347_169#" "nextSB0" 1800
-cap "w_123_n24#" "m1_129_25#" 1880
-cap "add" "a_446_n19#" 1908
-cap "shift" "nextSB0" 4664
-cap "a_400_n17#" "nextSB1" 5610
-cap "Gnd" "a_400_n17#" 3744
-cap "Vdd" "a_400_n17#" 4214
-cap "w_123_n24#" "m1_128_n4#" 4512
-cap "sel0" "Gnd" 564
-cap "sel0" "Vdd" 1820
-cap "sign" "a_400_98#" 1080
-cap "w_123_n78#" "m1_128_n78#" 4512
-cap "sel0" "sel1" 764
-cap "Gnd" "nextSB1" 13700
-cap "Vdd" "nextSB1" 11494
-cap "Vdd" "Gnd" 8640
-cap "sel1" "Gnd" 564
-cap "load" "sel0" 114
-cap "sel1" "Vdd" 564
-cap "a_418_n41#" "inbit" 528
-cap "SB1" "nextSB1" 960
-cap "m1_348_25#" "nextSB0" 3375
-cap "Gnd" "SB1" 15100
-cap "Vdd" "SB1" 34754
-cap "load" "Gnd" 13740
-cap "a_428_98#" "load" 528
-cap "load" "Vdd" 2714
 cap "SB0" "a_446_n19#" 675
-cap "m1_347_169#" "nextSB1" 1800
-cap "nextSB0" "SB0" 240
-cap "start" "a_400_98#" 896
-cap "add" "Gnd" 564
-cap "Vdd" "add" 564
-cap "load" "SB1" 240
+cap "nextSB1" "Vdd" 11494
+cap "m1_128_271#" "w_123_239#" 4512
+cap "Vdd" "a_446_n19#" 4214
+cap "SB1" "load" 240
+cap "sign" "nextSB1" 95
+cap "a_400_98#" "nextSB1" 3908
+cap "a_308_n85#" "w_226_n143#" 1670
+cap "Gnd" "SB1" 15100
+cap "SB1" "w_226_n143#" 1128
+cap "nextSB1" "start" 2688
+cap "a_339_n133#" "w_226_n143#" 9936
+cap "inbit" "nextSB1" 3592
+cap "nextSB1" "shift" 2695
+cap "SB1" "nextSB0" 240
+cap "a_236_n133#" "SB1" 480
+cap "nextSB0" "reset" 3375
+cap "a_418_3#" "SB0" 1206
+cap "a_308_n85#" "Vdd" 16044
+cap "SB0" "SB1" 1968
+cap "Gnd" "load" 13740
+cap "SB1" "Vdd" 44058
+cap "SB0" "a_339_n133#" 480
+cap "a_264_n108#" "Vdd" 564
+cap "Vdd" "reset" 4320
+cap "a_339_n133#" "Vdd" 5814
+cap "inbit" "a_418_n41#" 528
+cap "add" "a_446_n19#" 1908
+cap "nextSB0" "load" 3592
+cap "Gnd" "a_400_n17#" 3744
+cap "SB0" "a_438_3#" 1072
+cap "w_123_n24#" "m1_129_25#" 1880
+cap "Vdd" "load" 2714
+cap "nextSB1" "clk" 1800
+cap "Gnd" "nextSB0" 7802
+cap "SB1" "shift" 240
+cap "sel0" "load" 114
+cap "a_236_n133#" "w_226_n143#" 9936
+cap "SB0" "Gnd" 17562
+cap "Vdd" "a_400_n17#" 4214
+cap "nextSB1" "a_418_n41#" 264
+cap "Gnd" "Vdd" 8640
+cap "SB0" "w_226_n143#" 1128
+cap "Vdd" "w_226_n143#" 2128
+cap "Gnd" "sel0" 564
+cap "inbit" "a_428_n41#" 704
+cap "SB0" "nextSB0" 240
+cap "a_198_n85#" "w_226_n143#" 1974
+cap "a_400_98#" "Gnd" 2474
+cap "sign" "Gnd" 13968
+cap "m1_128_n78#" "w_123_n78#" 4512
+cap "nextSB0" "Vdd" 5420
+cap "m1_128_n4#" "w_123_n24#" 4512
+cap "a_236_n133#" "Vdd" 5814
+cap "a_428_98#" "load" 528
+cap "a_236_n133#" "a_198_n85#" 240
+cap "SB1" "nextSB1" 960
+cap "SB0" "Vdd" 29923
+cap "nextSB1" "reset" 1440
+cap "Gnd" "start" 12352
+cap "inbit" "a_400_n17#" 960
+cap "SB0" "sel0" 114
+cap "inbit" "Gnd" 5544
+cap "Gnd" "shift" 8348
+cap "a_198_n85#" "Vdd" 5556
+cap "a_244_n108#" "Vdd" 564
+cap "reset" "clk" 30060
+cap "Vdd" "sel0" 1820
+cap "sign" "Vdd" 15041
+cap "a_400_98#" "Vdd" 2286
+cap "nextSB0" "start" 1968
+cap "Gnd" "sel1" 564
+cap "shift" "a_408_74#" 880
+cap "nextSB0" "shift" 4664
+cap "w_125_322#" "m1_128_345#" 3619
+cap "sign" "a_400_98#" 1080
+cap "m1_128_197#" "w_123_177#" 4512
+cap "Gnd" "add" 564
+cap "Vdd" "start" 18269
+cap "inbit" "Vdd" 564
+cap "Vdd" "shift" 3216
+cap "nextSB1" "a_400_n17#" 5610
+cap "Gnd" "nextSB1" 13700
+cap "a_400_98#" "start" 896
+cap "Gnd" "a_446_n19#" 3744
+cap "a_308_n85#" "a_339_n133#" 240
+cap "Vdd" "sel1" 564
+cap "a_400_98#" "shift" 720
+cap "m1_128_123#" "w_123_64#" 4512
+cap "SB1" "a_339_n133#" 896
+cap "sel0" "sel1" 764
+cap "SB0" "add" 1048
+cap "nextSB1" "nextSB0" 1935
+cap "add" "Vdd" 564
+cap "nextSB0" "clk" 1800
+device mosfet nfet 375 -133 376 -132 2 15 "w_226_n143#" "a_339_n133#" 4 0 "w_226_n143#" 15 0 "SB0" 15 0
+device mosfet nfet 365 -133 366 -132 2 15 "w_226_n143#" "a_339_n133#" 4 0 "SB0" 15 0 "w_226_n143#" 15 0
+device mosfet nfet 355 -133 356 -132 2 15 "w_226_n143#" "a_339_n133#" 4 0 "w_226_n143#" 15 0 "SB0" 15 0
+device mosfet nfet 345 -133 346 -132 2 15 "w_226_n143#" "a_308_n85#" 4 0 "a_339_n133#" 15 0 "w_226_n143#" 15 0
+device mosfet nfet 272 -133 273 -132 2 15 "w_226_n143#" "a_236_n133#" 4 0 "w_226_n143#" 15 0 "SB1" 15 0
+device mosfet nfet 262 -133 263 -132 2 15 "w_226_n143#" "a_236_n133#" 4 0 "SB1" 15 0 "w_226_n143#" 15 0
+device mosfet nfet 252 -133 253 -132 2 15 "w_226_n143#" "a_236_n133#" 4 0 "w_226_n143#" 15 0 "SB1" 15 0
+device mosfet nfet 242 -133 243 -132 2 15 "w_226_n143#" "a_198_n85#" 4 0 "a_236_n133#" 15 0 "w_226_n143#" 15 0
 device mosfet nfet 460 -71 461 -70 2 40 "Gnd" "start" 4 0 "nextSB1" 40 0 "Gnd" 40 0
+device mosfet pfet 375 -108 376 -107 2 27 "Vdd" "a_339_n133#" 4 0 "Vdd" 27 0 "SB0" 27 0
+device mosfet pfet 365 -108 366 -107 2 27 "Vdd" "a_339_n133#" 4 0 "SB0" 27 0 "Vdd" 27 0
+device mosfet pfet 355 -108 356 -107 2 27 "Vdd" "a_339_n133#" 4 0 "Vdd" 27 0 "SB0" 27 0
+device mosfet pfet 345 -108 346 -107 2 27 "Vdd" "a_308_n85#" 4 0 "a_339_n133#" 27 0 "Vdd" 27 0
+device mosfet pfet 272 -108 273 -107 2 27 "Vdd" "a_236_n133#" 4 0 "a_264_n108#" 27 0 "SB1" 27 0
+device mosfet pfet 262 -108 263 -107 2 27 "Vdd" "a_236_n133#" 4 0 "SB1" 27 0 "a_264_n108#" 27 0
+device mosfet pfet 252 -108 253 -107 2 27 "Vdd" "a_236_n133#" 4 0 "a_244_n108#" 27 0 "SB1" 27 0
+device mosfet pfet 242 -108 243 -107 2 27 "Vdd" "a_198_n85#" 4 0 "a_236_n133#" 27 0 "a_244_n108#" 27 0
 device mosfet pfet 436 -69 437 -68 2 18 "Vdd" "SB1" 4 0 "Vdd" 18 0 "nextSB1" 18 0
 device mosfet pfet 426 -69 427 -68 2 18 "Vdd" "SB0" 4 0 "nextSB1" 18 0 "Vdd" 18 0
 device mosfet pfet 416 -69 417 -68 2 18 "Vdd" "sign" 4 0 "Vdd" 18 0 "nextSB1" 18 0
@@ -165,43 +207,50 @@ device mosfet pfet 436 118 437 119 2 18 "Vdd" "SB1" 4 0 "Vdd" 18 0 "nextSB0" 18 
 device mosfet pfet 426 118 427 119 2 18 "Vdd" "SB0" 4 0 "nextSB0" 18 0 "Vdd" 18 0
 device mosfet pfet 416 118 417 119 2 18 "Vdd" "a_400_98#" 4 0 "Vdd" 18 0 "nextSB0" 18 0
 device mosfet pfet 406 118 407 119 2 18 "Vdd" "sign" 4 0 "a_400_98#" 18 0 "Vdd" 18 0
-cap "rego_0/a_85_n38#" "rego_0/w_0_n106#" -376
+cap "rego_0/w_0_n160#" "rego_1/REGOUT" -494
+cap "rego_0/w_0_n160#" "w_226_n143#" 6976
+cap "rego_0/w_0_n106#" "rego_0/a_85_n38#" -376
 cap "rego_0/w_0_n106#" "rego_0/w_0_n106#" -752
+cap "rego_0/w_0_n106#" "rego_0/w_0_n106#" 3040
+cap "rego_0/w_0_n106#" "rego_0/w_0_n160#" 2432
 cap "rego_1/RST" "rego_1/w_0_n106#" 3948
 cap "rego_0/w_0_n18#" "rego_0/w_0_n18#" -752
-cap "rego_1/w_0_n106#" "m1_348_25#" 752
-cap "rego_1/w_0_n18#" "m1_348_25#" 8648
+cap "rego_1/w_0_n106#" "reset" 752
+cap "rego_1/w_0_n18#" "reset" 8648
 cap "rego_0/w_0_95#" "rego_0/w_0_95#" -752
 cap "rego_0/w_0_157#" "rego_0/w_0_157#" -752
 cap "rego_0/w_0_240#" "rego_0/w_0_240#" -846
 cap "rego_0/w_0_240#" "rego_1/a_24_218#" 5310
-cap "nextSB0" "rego_1/w_0_240#" 2700
-cap "rego_0/a_24_218#" "rego_0/w_0_240#" 540
-cap "rego_1/a_24_218#" "rego_0/w_0_240#" 10620
+cap "rego_1/w_0_240#" "nextSB0" 2700
+cap "rego_0/w_0_240#" "rego_0/a_24_218#" 540
+cap "rego_0/w_0_240#" "rego_1/a_24_218#" 10620
 cap "rego_1/w_0_240#" "nextSB0" 5400
 merge "rego_0/a_24_218#" "nextSB1" -342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -14 0 0
-merge "rego_1/w_0_95#" "rego_0/w_0_95#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -66 0 0 0 0
-merge "rego_0/w_0_95#" "w_123_177#"
-merge "w_123_177#" "m1_128_197#"
-merge "rego_1/REGOUT" "SB0" -494 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26 -30 0 0
-merge "rego_1/INCLK" "rego_0/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "rego_0/REGOUT" "SB1" -247 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13 -28 0 0
-merge "rego_1/RST" "m1_348_25#" -18988 0 0 0 0 0 0 0 0 0 0 0 0 -320 -143 0 0 0 0
-merge "rego_1/w_0_n160#" "rego_0/w_0_n160#" -5264 0 0 0 0 0 0 0 0 0 0 0 0 -112 -46 0 0 -96 -70
+merge "rego_1/w_0_n160#" "rego_0/w_0_n160#" -2632 0 0 0 0 0 0 0 0 0 0 0 0 -112 -94 0 0 -1112 -404
 merge "rego_0/w_0_n160#" "w_123_n78#"
 merge "w_123_n78#" "m1_128_n78#"
 merge "m1_128_n78#" "Vdd"
+merge "Vdd" "a_244_n108#"
+merge "a_244_n108#" "a_264_n108#"
+merge "rego_0/REGOUT" "a_198_n85#" -8660 0 0 0 0 -45 -92 0 0 0 0 0 0 0 0 -13 -28 0 0
+merge "rego_1/w_0_95#" "rego_0/w_0_95#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -66 0 0 0 0
+merge "rego_0/w_0_95#" "w_123_177#"
+merge "w_123_177#" "m1_128_197#"
+merge "rego_1/w_0_n106#" "rego_0/w_0_n106#" -3760 0 0 0 0 0 0 0 0 0 0 0 0 -80 -42 0 0 0 0
+merge "rego_0/w_0_n106#" "w_123_n24#"
+merge "w_123_n24#" "m1_128_n4#"
+merge "m1_128_n4#" "w_226_n143#"
+merge "w_226_n143#" "Gnd"
+merge "rego_1/INCLK" "rego_0/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rego_1/RST" "reset" -18988 0 0 0 0 0 0 0 0 0 0 0 0 -320 -143 0 0 0 0
+merge "rego_1/REGOUT" "a_308_n85#" -6240 0 0 0 0 -38 -78 0 0 0 0 0 0 0 0 -26 -30 0 0
 merge "rego_1/a_24_218#" "nextSB0" -10944 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -222 -92 0 0
 merge "rego_1/w_0_n18#" "rego_0/w_0_n18#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -66 0 0 -642 -440
 merge "rego_0/w_0_n18#" "w_123_64#"
 merge "w_123_64#" "m1_128_123#"
 merge "rego_1/a_85_n38#" "rego_0/RST" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0
 merge "rego_0/a_85_n38#" "m1_129_25#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -18 0 0 0 0
-merge "rego_1/CLK" "m1_347_169#" -2820 0 0 0 0 0 0 0 0 0 0 0 0 -60 -32 0 0 0 0
-merge "rego_1/w_0_n106#" "rego_0/w_0_n106#" -3760 0 0 0 0 0 0 0 0 0 0 0 0 -80 -42 0 0 0 0
-merge "rego_0/w_0_n106#" "w_123_n24#"
-merge "w_123_n24#" "m1_128_n4#"
-merge "m1_128_n4#" "Gnd"
+merge "rego_1/CLK" "clk" -2820 0 0 0 0 0 0 0 0 0 0 0 0 -60 -32 0 0 0 0
 merge "rego_1/w_0_157#" "rego_0/w_0_157#" 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -66 0 0 -372 -254
 merge "rego_0/w_0_157#" "w_123_239#"
 merge "w_123_239#" "m1_128_271#"
